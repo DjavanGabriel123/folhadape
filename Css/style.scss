@@ -1,0 +1,235 @@
+@import "salvar";
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#Camada_1 {
+    width: 20px;
+    height: 20px;
+    fill: #08c;
+}
+
+.fone {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    vertical-align: middle;
+
+    .entrar {
+        text-decoration: none;
+    }
+}
+
+.loginarea a {
+    text-decoration: none;
+    margin-left: 13px;
+}
+
+.assinar {
+    padding: 11px 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #231f20;
+    background: #f7d637;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.menubusca {
+    border: 1px solid #dee0e6;
+    border-radius: 6px;
+    vertical-align: middle;
+    margin-left: 40px;
+    display: inline-block;
+
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        height: 23px;
+    }
+
+    .menuicon {
+        height: 46px;
+        padding: 10px 15px;
+        position: relative;
+        z-index: 5;
+        margin: 0;
+        font-weight: bold;
+        color: #231f20;
+        line-height: 26px;
+    }
+
+    .formbusca {
+        position: relative;
+        height: 46px;
+        width: 56px;
+        z-index: 5;
+        display: inline-block;
+        border-left: 1px solid #dee0e6;
+        margin-left: 20px;
+    }
+}
+
+header.headersite .topocontent {
+    width: 100%;
+    padding: 16px 0px;
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    --tw-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 8px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    content: var(--tw-content);
+
+    ul {
+        display: flex;
+        list-style: none;
+        color: #1A72B4;
+    }
+
+    li {
+        margin-left: 17px;
+        font-size: 12px;
+        margin-bottom: 17px;
+        font-weight: 500
+    }
+
+    svg {
+        float: left;
+        margin-top: -7px;
+    }
+}
+
+.midias {
+    border-bottom: 1px solid #dee0e6;
+    margin-left: 12px;
+
+    svg {
+        margin-left: 5px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+}
+
+.facebook svg {
+    width: 20px;
+    height: 20px;
+    fill: #416ff1;
+
+}
+
+.youtube svg {
+    width: 20px;
+    height: 20px;
+    fill: #d52831;
+}
+
+.instagram svg {
+    width: auto;
+    height: 14px !important;
+    fill: #fff;
+    background: linear-gradient(45deg, rgb(254, 201, 30) 0%, rgb(237, 0, 23) 50%, rgb(190, 0, 165) 100%);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.twitter svg {
+    width: 20px;
+    height: 20px;
+    fill: #489ef1;
+
+}
+
+.loginarea {
+    border-left: 1px solid #dee0e6;
+    margin: -43px 104px -10px 105px;
+    height: 35px;
+    border-bottom: 1px solid #dee0e6;
+    padding-bottom: 7px;
+
+    strong {
+        color: #231f20;
+        margin-top: 3px;
+        font-size: 11px;
+        display: inline-block;
+        width: 80px;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    span {
+        width: 70px;
+    }
+}
+
+header.headerSite .head .grid_6 .loginArea .entrar {
+    padding: 0 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #231f20;
+}
+
+.menutopo {
+    height: 35px;
+    border-top: 3px solid #f7d637;
+    position: relative;
+
+    .scrollmenu {
+
+
+        ul {
+            display: inline-flex;
+            width: 100%;
+            justify-content: center;
+            list-style: none;
+            align-items: center;
+        }
+    }
+
+    ul,
+    li {
+        padding: 0 30px;
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+.menutopo ul li:hover {
+    color: #d7a110;
+}
+
+.menutopo ul li::after {
+    content: "•";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bannertopo {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(#9aa0ad 20%, transparent 20%), radial-gradient(#9aa0ad 20%, transparent 20%);
+    background-color: #fff;
+    background-position: 0 0, 5px 5px;
+    background-size: 5px 5px;
+}
