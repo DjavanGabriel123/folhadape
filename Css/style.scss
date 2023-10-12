@@ -43,7 +43,7 @@ body {
     border: 1px solid #dee0e6;
     border-radius: 6px;
     vertical-align: middle;
-    margin-left: 40px;
+    margin-left: 15px;
     display: inline-block;
 
     button {
@@ -185,7 +185,6 @@ header.headerSite .head .grid_6 .loginArea .entrar {
 }
 
 .menutopo {
-    height: 35px;
     border-top: 3px solid #f7d637;
     position: relative;
 
@@ -194,10 +193,11 @@ header.headerSite .head .grid_6 .loginArea .entrar {
 
         ul {
             display: inline-flex;
-            width: 100%;
+            width: 95%;
             justify-content: center;
             list-style: none;
             align-items: center;
+            height: 5px;
         }
     }
 
@@ -206,6 +206,7 @@ header.headerSite .head .grid_6 .loginArea .entrar {
         padding: 0 30px;
         position: relative;
         cursor: pointer;
+        font-size: 18px;
     }
 }
 
@@ -220,6 +221,10 @@ header.headerSite .head .grid_6 .loginArea .entrar {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.menutopo ul li:last-child::after {
+     content: "";
 }
 
 .bannertopo {
