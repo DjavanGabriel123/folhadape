@@ -132,6 +132,155 @@ header.headersite .topocontent {
     margin-top: 18px;
 }
 
+.leiaJornal {
+    width: 215px;
+    text-align: right;
+    vertical-align: middle;
+    float: right;
+    display: flex;
+    margin-left: 60px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    img {
+        border-radius: 6px;
+        width: 112px;
+        vertical-align: middle;
+        height: 150px;
+        border: 1px solid #dee0e6;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    div {
+        width: 100px;
+        padding-right: 10px;
+        vertical-align: middle;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    strong {
+        display: block;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #231f20;
+        margin-bottom: 8px;
+        font-size: 14px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    span {
+        display: block;
+        font-weight: 600;
+        color: #34343e;
+        font-size: 12px;
+        text-transform: none;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    small {
+        display: block;
+        color: #9aa0ad;
+        font-size: 12px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.bordajornal {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        padding: 30px 20px;
+        padding-right: 58px;
+        border-top: 1px solid #dee0e6;
+        border-bottom: 1px solid #dee0e6;
+    }
+}
+
+.leiajornalmobile {
+    display: none;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        vertical-align: middle;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        border-radius: 6px;
+        width: 150px;
+        vertical-align: middle;
+        height: auto;
+        border: 1px solid #dee0e6;
+    }
+}
+
+.botaojornal {
+    margin-left: 60px;
+
+    a {
+        display: grid;
+    }
+
+    strong {
+        display: block;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #231f20;
+        margin-bottom: 8px;
+        font-size: 16px;
+        width: 148%;
+    }
+
+    span {
+        color: #34343e;
+        text-transform: none;
+    }
+
+    .btLer {
+        display: inline-block;
+        width: 90%;
+        line-height: 14px;
+        color: #231f20;
+        background: #f7d637;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 6px;
+        font-weight: bold;
+        text-transform: none;
+        font-size: 14px;
+
+        span {
+            width: 100%;
+        }
+
+        a {
+            background: #f5eb32;
+        }
+    }
+}
+
+
 
 
 .nav-bar {
@@ -360,6 +509,14 @@ li {
 
 .menutopo ul li:last-child::after {
     content: "";
+}
+
+.img_ad {
+
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
 }
 
 .bannertopo {
@@ -661,8 +818,9 @@ h3 {
     .banner {
 
         @media (max-width: 768px) {
-            width: 100%;
-            margin-left: 35px;
+            margin-left: 40px;
+            margin-top: 45px;
+            width: 300px;
         }
     }
 
@@ -738,6 +896,7 @@ h3 {
 .borderimage {
     border-bottom: 1px solid #dee0e6;
     padding: 10px;
+    margin-bottom: 5px;
 
     @media (max-width: 768px) {
         display: none;
@@ -1048,6 +1207,31 @@ footer .footer .grid_6.EQM {
     }
 }
 
+.linkMaistime {
+    position: absolute;
+    font-weight: normal;
+    bottom: 92%;
+    right: 0px;
+    transform: translateY(50%);
+    display: block;
+    color: #d7a110;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 16px;
+
+    @media (max-width: 768px) {
+        right: 575px;
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+        fill: #d7a110;
+        margin-bottom: 2px;
+        vertical-align: middle;
+    }
+}
+
 .titlepadraocotacao {
     font-weight: 600;
     position: relative;
@@ -1300,7 +1484,7 @@ footer .footer .grid_6.EQM {
 
     @media (max-width: 768px) {
         margin-left: 10px;
-        font-size: 14px;
+        font-size: 18px;
     }
 
 }
@@ -1368,6 +1552,27 @@ footer .footer .grid_6.EQM {
     }
 }
 
+.borderclassificacao1 {
+    border-bottom: 1px solid #dee0e6;
+    padding: 130px;
+    margin: 50px 10px;
+    width: 985px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.borderclassificacao2 {
+    border-top: 1px solid #dee0e6;
+    margin: 50px 9px;
+    width: 1249px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
 .borderfolha2 {
     border-top: 1px solid #dee0e6;
     margin: 50px 9px;
@@ -1403,6 +1608,7 @@ footer .footer .grid_6.EQM {
         margin-left: 0px;
         height: 260px;
         margin-top: 510px;
+        margin-right: 0px;
     }
 
     ul {
@@ -1434,13 +1640,248 @@ footer .footer .grid_6.EQM {
     }
 }
 
+
+
+
+
 .squarebanner {
+    @media (max-width: 768px) {
+        width: 80%;
+    }
 
     @media (max-width: 768px) {
         img {
-            margin-left: 45px;
+            margin-left: 40px;
             margin-top: 45px;
+            width: 300px;
         }
     }
 
+}
+
+.bilboabanner {
+    margin-left: 100px;
+    padding-top: 15px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    img {
+        width: 90%;
+    }
+}
+
+.borderbanner1 {
+    border-bottom: 1px solid #dee0e6;
+    width: 100%;
+    margin-top: 60px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.borderbanner2 {
+    border-bottom: 1px solid #dee0e6;
+    width: 100%;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+#google_image_div {
+    z-index: 999 !important;
+    height: 100px;
+    position: absolute;
+    width: 300px;
+    margin-left: 140px;
+    margin-top: -95px
+}
+
+.topointensporte {
+    width: 301px;
+    height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px 6px 0 0;
+    border: 1px solid #dee0e6;
+
+
+
+    @media (max-width: 768px) {
+        width: 40%;
+        height: 50px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 6px 6px 0 0;
+        border: 1px solid #dee0e6;
+    }
+}
+
+.topointensporte .abaEsporte {
+    max-width: 180px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #231f20;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0px;
+
+    .logotime {
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+}
+
+.imgtime {
+    border-radius: 0 0 6px 6px;
+
+    @media (max-width: 768px) {
+        width: 40%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: unset;
+        height: auto;
+        max-height: 400px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+.texttime {
+
+    small {
+        color: #d7a110;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-weight: 600;
+        color: #231f20;
+        width: 100%;
+        font-size: 18px;
+
+        @media (max-width: 768px) {
+            width: 40%;
+        }
+
+    }
+}
+
+#brasileirao {
+    width: 160px;
+    height: auto;
+
+    @media (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+.display {
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.textbrasileirao {
+    margin: 0px;
+    margin-left: 15px;
+
+    @media (max-width: 768px) {
+        margin-left: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    span {
+        font-size: 14px;
+    }
+}
+
+.classificacao {
+    border: 1px solid #dee0e6;
+    border-radius: 6px;
+    padding: 5px 20px 20px;
+    margin-top: 10px;
+    margin-left: -4px;
+    margin-right: 7px;
+
+    @media (max-width: 768px) {
+        border: 1px solid #dee0e6;
+        border-radius: 6px;
+        padding: 5px 20px 20px;
+        margin: 5px;
+    }
+
+    h2 {
+
+
+        @media (max-width: 768px) {
+            margin-right: 180px;
+        }
+    }
+
+    select {
+        border: 1px solid #dee0e6;
+        border-radius: 6px;
+        background: #f3f5f9;
+        width: 100%;
+        height: 35px;
+        color: #34343e;
+        font-size: 12px;
+        outline: none;
+
+        @media (max-width: 768px) {
+            border: 1px solid #dee0e6;
+            border-radius: 6px;
+            background: #f3f5f9;
+            width: 100%;
+            height: 35px;
+            color: #34343e;
+            outline: none;
+        }
+    }
+}
+
+
+
+
+.bannerclassificacao {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    padding-top: 20px;
+
+    @media (max-width: 768px) {
+        margin-left: 45px;
+        margin-top: 45px;
+        width: 300px;
+    }
+}
+
+.container_16 .grid_12 {
+    @media (max-width: 768px) {
+        .grid_4 {
+            display: flex;
+            width: 100%;
+        }
+    }
 }
