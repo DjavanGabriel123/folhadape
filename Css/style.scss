@@ -303,8 +303,8 @@ header.headersite .topocontent {
     }
 
     li {
-        margin-left: 15px;
-        font-size: 13px;
+        margin-left: 19px;
+        font-size: 12px;
         margin-bottom: 17px;
         font-weight: 500;
 
@@ -572,11 +572,12 @@ img {
 }
 
 .logofolha {
-    width: 100%;
+    width: 600px;
+    margin: -60px;
 
     @media (max-width: 768px) {
         width: 286px;
-        margin-bottom: 0px;
+        margin: 10px 0px;
     }
 }
 
@@ -897,6 +898,7 @@ h3 {
     border-bottom: 1px solid #dee0e6;
     padding: 10px;
     margin-bottom: 5px;
+    width: 95%;
 
     @media (max-width: 768px) {
         display: none;
@@ -1615,7 +1617,7 @@ footer .footer .grid_6.EQM {
         list-style: none;
         width: 100%;
         box-sizing: border-box;
-        padding: 30px 30px;
+        padding: 15px 30px;
 
         li {
             width: 100%;
@@ -1885,3 +1887,150 @@ footer .footer .grid_6.EQM {
         }
     }
 }
+
+.dvcolunistas {
+    margin-left: 0px;
+    width: 400px;
+    margin: 0 10px 20px;
+
+    @media (max-width: 768px) {
+        margin: 0 10px 10px;
+        height: 160px;
+    }
+
+    .colunistas {
+        width: 140px;
+        height: 180px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin-bottom: 0;
+        margin-right: 10px;
+
+        @media (max-width: 768px) {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+        }
+    }
+
+    .noticiacolunistas {
+        position: relative;
+        width: 100%;
+        vertical-align: top;
+        display: flex;
+        margin-left: -5px;
+    }
+
+    .logocoluna {
+        font-weight: 700;
+        color: #231f20;
+        text-transform: uppercase;
+        padding: 0;
+        font-size: 22px;
+    }
+
+    h3 {
+        font-weight: 600;
+        color: #231f20;
+        width: 100%;
+        font-size: 18px;
+        margin-top: 20px;
+
+        @media (max-width: 768px) {
+            width: 70%;
+        }
+    }
+}
+
+.gridcolunistas {
+    display: flex;
+    align-items: space-between;
+    flex-flow: row wrap;
+
+    @media (max-width: 768px) {
+        display: unset;
+    }
+}
+
+.lazycarrosel {
+    width: 77px;
+    border-radius: 170px;
+}
+
+.playerColunistas {
+    display: flex;
+    width: 301px;
+}
+
+.colunistasPlayer {
+    margin-left: 10px;
+
+    small {
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #d7a110;
+        display: block;
+        font-size: 14px;
+    }
+
+    h3 {
+        color: #231f20;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.carrosel {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.controll {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .left {
+        width: 26px;
+        height: 26px;
+        fill: #231f20;
+        margin: 5px;
+    }
+
+    .leftcontroll {
+        display: block;
+        width: 36px;
+        height: 36px;
+        background: #f7d637;
+        left: auto;
+        z-index: 5;
+        border-radius: 100%;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .right {
+        width: 26px;
+        height: 26px;
+        fill: #231f20;
+        margin: 5px;
+    }
+
+    .rightcontroll {
+        display: block;
+        width: 36px;
+        height: 36px;
+        background: #f7d637;
+        left: auto;
+        z-index: 5;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+}
+
+.overflowhidden{
+    overflow: hidden;
+}
+
