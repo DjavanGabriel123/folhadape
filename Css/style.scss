@@ -16,7 +16,7 @@ body {
 
 .container_16 {
     @media (max-width: 768px) {
-        width: 99%;
+        width: 100%;
         margin: 0;
         padding: 0 10px;
         box-sizing: border-box;
@@ -364,6 +364,7 @@ header.headersite .topocontent {
 
     @media (max-width: 768px) {
         height: 40px;
+        display: none;
     }
 
 
@@ -503,7 +504,7 @@ header.headerSite .head .grid_6 .loginArea .entrar {
             padding: 0px 30px;
 
             @media (max-width: 768px) {
-                padding: 33px;
+                padding: 31px;
                 font-size: 14px;
             }
         }
@@ -651,7 +652,7 @@ img {
     margin: -60px 45px;
 
     @media (max-width: 768px) {
-        width: 155%;
+        width: 150%;
         margin: 0px -45px;
         padding-right: 10px;
     }
@@ -1248,6 +1249,7 @@ footer .footer .grid_6.EQM {
 .bordernews {
     border-bottom: 1px solid #dee0e6;
     margin-top: 60px;
+    width: 98%;
 
     @media (max-width: 768px) {
         display: none;
@@ -1604,6 +1606,8 @@ footer .footer .grid_6.EQM {
         cursor: pointer;
         color: rgb(33, 142, 225);
         margin: 11px;
+        transition: transform 0.5s ease-in-out;
+        display: none;
     }
 }
 
@@ -1627,7 +1631,7 @@ footer .footer .grid_6.EQM {
 
     @media (max-width: 768px) {
         display: none;
-        right: -10px;
+        right: -4px;
         display: flex;
         position: absolute;
         top: 7px;
@@ -1777,7 +1781,7 @@ footer .footer .grid_6.EQM {
 
 .borderbanner1 {
     border-bottom: 1px solid #dee0e6;
-    width: 100%;
+    width: 98%;
     margin-top: 60px;
 
     @media (max-width: 768px) {
@@ -1787,7 +1791,7 @@ footer .footer .grid_6.EQM {
 
 .borderbanner2 {
     border-bottom: 1px solid #dee0e6;
-    width: 100%;
+    width: 98%;
     margin-bottom: 10px;
 
     @media (max-width: 768px) {
@@ -2166,7 +2170,7 @@ footer .footer .grid_6.EQM {
 .bordercarrosel1 {
     border-top: solid 1px #dee0e6;
     margin-left: 10px;
-    width: 100%;
+    width: 98%;
 
     @media (max-width: 768px) {
         display: none;
@@ -2497,6 +2501,10 @@ footer .footer .grid_6.EQM {
     background: #f7d637;
     border-radius: 6px;
 
+    @media (max-width: 768px) {
+        padding: 5px 20px 5px 10px;
+    }
+
     svg {
         width: 18px;
         height: 18px;
@@ -2589,7 +2597,7 @@ footer .footer .grid_6.EQM {
         background-color: white;
         position: absolute;
         left: 0;
-        top: 50px;
+        top: 42px;
         z-index: 100;
         width: 309px;
         height: 360px;

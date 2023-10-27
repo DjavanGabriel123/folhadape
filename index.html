@@ -38,7 +38,7 @@
             </ul>
         </div>
 
-        <div class="hamburger">☰ <span></span>MENU</div>
+        <div class="hamburger">☰<span></span>MENU</div>
 
         <div class="nav-bar  prefix_2 suffix_2">
             <div class="icontopo">
@@ -2462,6 +2462,7 @@
         Hamburguer.addEventListener('click', function (e) {
             e.preventDefault();
             menuHamburguer.style.display = menuHamburguer.style.display === 'block' ? 'none' : 'block';
+            Hamburguer.innerHTML = menuHamburguer.style.display === 'block' ? "X <span></span>MENU" : "☰ <span></span>MENU";
         });
 
 
