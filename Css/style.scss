@@ -6,24 +6,26 @@ body {
     @media (max-width: 768px) {
         min-width: auto;
         margin: 0px;
-        height: 10000px;
     }
+}
+
+.html,
+body {
+    overflow-x: hidden;
 }
 
 .container_16 {
     @media (max-width: 768px) {
 
-        width: 100%;
+        width: 99%;
         margin: 0;
         padding: 0 10px;
         box-sizing: border-box;
+        margin-top: 10px;
     }
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
+
 
 #Camada_1 {
     width: 20px;
@@ -72,15 +74,56 @@ body {
 
 }
 
-.menubusca {
-    border: 1px solid #dee0e6;
+.menubuscaright {
+
     border-radius: 6px;
     vertical-align: middle;
     margin-left: 15px;
     display: inline-block;
+    height: 47px;
+
 
     @media (max-width: 768px) {
-        display: none;
+        margin-right: -8px;
+        margin-left: 35px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #dee0e6;
+    }
+
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        height: 23px;
+    }
+}
+
+.menubusca {
+    border-radius: 6px;
+    vertical-align: middle;
+    margin-left: 15px;
+    display: inline-block;
+    height: 47px;
+    border: 1px solid #dee0e6;
+
+
+    @media (max-width: 768px) {
+        margin-left: -4px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #dee0e6;
+        margin-right: 30px;
+    }
+
+    span {
+        padding-left: 5px;
+
+        @media (max-width: 768px) {
+            padding-left: 2px;
+        }
+
     }
 
     button {
@@ -105,12 +148,42 @@ body {
     .formbusca {
         position: relative;
         height: 46px;
-        width: 56px;
+        width: 60px;
         z-index: 5;
         display: inline-block;
         border-left: 1px solid #dee0e6;
         margin-left: 20px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
     }
+}
+
+.formbuscamobile {
+    display: none;
+
+    @media (max-width: 768px) {
+        float: right;
+        height: 46px;
+        width: 60px;
+        display: block;
+        margin-right: -10px;
+    }
+}
+
+.botaomobile {
+    margin-left: -5px;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    margin-top: 12px;
+    margin-left: 10px;
+    color: black;
+    scale: 1.1;
 }
 
 header.headersite .topocontent {
@@ -123,13 +196,13 @@ header.headersite .topocontent {
     align-items: center;
 
     @media (max-width: 768px) {
-        width: 91%;
+        width: 100%;
         padding: 0px;
     }
 }
 
 .headersite {
-    margin-top: 18px;
+    margin-top: 5px;
 }
 
 .leiaJornal {
@@ -138,7 +211,7 @@ header.headersite .topocontent {
     vertical-align: middle;
     float: right;
     display: flex;
-    margin-left: 60px;
+    margin-right: 42px;
 
     @media (max-width: 768px) {
         display: none;
@@ -333,7 +406,7 @@ header.headersite .topocontent {
     .bordermidias {
         border-bottom: 1px solid #dee0e6;
         width: 985px;
-        height: 1px;
+        height: 2px;
     }
 
 
@@ -377,8 +450,8 @@ header.headersite .topocontent {
 
 .loginarea {
     border-left: 1px solid #dee0e6;
-    margin: -18px 34px -10px 191px;
-    height: 35px;
+    margin: -16px 34px -10px 191px;
+    height: 34px;
     border-bottom: 1px solid #dee0e6;
     padding-bottom: 7px;
 
@@ -476,7 +549,7 @@ li {
 
     @media (max-width: 768px) {
         display: block;
-        padding-top: 5px;
+        padding-top: 0px;
 
         svg {
             width: 100%;
@@ -550,6 +623,7 @@ li {
     @media (max-width: 768px) {
         height: 100px;
         margin-top: 0px;
+        width: 95%;
     }
 }
 
@@ -558,6 +632,7 @@ li {
     h1 {
         @media (max-width: 768px) {
             margin: 0px;
+            width: 100%;
         }
     }
 
@@ -573,11 +648,12 @@ img {
 
 .logofolha {
     width: 600px;
-    margin: -60px;
+    margin: -60px 45px;
 
     @media (max-width: 768px) {
-        width: 286px;
-        margin: 10px 0px;
+        width: 150%;
+        margin: 0px -45px;
+        padding-right: 10px;
     }
 }
 
@@ -632,6 +708,17 @@ a {
     position: relative;
     width: 100%;
     vertical-align: top;
+}
+
+.noticiaLinknews {
+
+    @media (max-width: 768px) {
+        display: block;
+        text-decoration: none;
+        position: relative;
+        width: 100%;
+        vertical-align: top;
+    }
 }
 
 
@@ -1073,7 +1160,7 @@ footer .footer .grid_6.EQM {
 
         @media (max-width: 768px) {
             margin: 30px 165px 14px 0;
-            //height: 180px;
+            height: 180px;
         }
     }
 
@@ -1181,7 +1268,7 @@ footer .footer .grid_6.EQM {
 
     @media (max-width: 768px) {
         font-size: 25px;
-        width: 25%;
+        width: 50%;
     }
 
     .linkMais {
@@ -1213,7 +1300,7 @@ footer .footer .grid_6.EQM {
     position: absolute;
     font-weight: normal;
     bottom: 92%;
-    right: 0px;
+    right: 10px;
     transform: translateY(50%);
     display: block;
     color: #d7a110;
@@ -1223,6 +1310,7 @@ footer .footer .grid_6.EQM {
 
     @media (max-width: 768px) {
         right: 575px;
+        bottom: 377px;
     }
 
     svg {
@@ -1316,6 +1404,7 @@ footer .footer .grid_6.EQM {
     list-style: none;
     margin: 0px;
     padding: 0px;
+    margin-left: -20px;
 
     @media (max-width: 768px) {
         margin: 20px -15px;
@@ -1465,6 +1554,20 @@ footer .footer .grid_6.EQM {
     }
 }
 
+.culturamobile {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 7px;
+
+    @media (max-width: 768px) {
+        width: 385px;
+        height: 200px;
+        object-fit: cover;
+        margin-left: -5px;
+    }
+}
+
 .lazytitulo {
     color: #d7a110;
     width: 100%;
@@ -1524,10 +1627,10 @@ footer .footer .grid_6.EQM {
 
     @media (max-width: 768px) {
         display: none;
-        right: -8px;
+        right: 0px;
         display: flex;
         position: absolute;
-        top: 6px;
+        top: 7px;
         width: 20px;
         justify-content: center;
         align-items: center;
@@ -1538,9 +1641,7 @@ footer .footer .grid_6.EQM {
 .imggtopomobile {
     display: none;
 
-    @media (max-width: 768px) {
-        display: none;
-    }
+    @media (max-width: 768px) {}
 }
 
 .borderfolha1 {
@@ -1717,7 +1818,7 @@ footer .footer .grid_6.EQM {
 
 
     @media (max-width: 768px) {
-        width: 40%;
+        width: 391px;
         height: 50px;
         padding: 0 10px;
         box-sizing: border-box;
@@ -1748,7 +1849,7 @@ footer .footer .grid_6.EQM {
     border-radius: 0 0 6px 6px;
 
     @media (max-width: 768px) {
-        width: 40%;
+        width: 391px;
         margin-right: 0;
         margin-bottom: 10px;
         max-width: unset;
@@ -1797,6 +1898,15 @@ footer .footer .grid_6.EQM {
     margin-bottom: 10px;
 }
 
+.videosimg {
+    display: flex;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+}
+
 .textbrasileirao {
     margin: 0px;
     margin-left: 15px;
@@ -1830,7 +1940,7 @@ footer .footer .grid_6.EQM {
         border: 1px solid #dee0e6;
         border-radius: 6px;
         padding: 5px 20px 20px;
-        margin: 5px;
+        margin: 0px;
     }
 
     h2 {
@@ -1918,7 +2028,7 @@ footer .footer .grid_6.EQM {
         width: 100%;
         vertical-align: top;
         display: flex;
-        margin-left: -5px;
+        margin-left: -15px;
     }
 
     .logocoluna {
@@ -1985,12 +2095,35 @@ footer .footer .grid_6.EQM {
     margin-top: 25px;
     margin-bottom: 10px;
     transition: transform 0.5s ease-in-out;
+
+    @media (max-width: 768px) {
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+.swiperslide {
+    width: 300px;
+    margin-right: 20px;
+
+    @media (max-width: 768px) {
+        width: 300px;
+        margin-right: 325px
+    }
 }
 
 .controll {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+        justify-content: unset;
+        margin-left: 155px;
+    }
 
     .left {
         width: 26px;
@@ -2030,7 +2163,434 @@ footer .footer .grid_6.EQM {
     }
 }
 
-.overflowhidden{
+.bordercarrosel1 {
+    border-top: solid 1px #dee0e6;
+    margin-left: 10px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.bordercarrosel2 {
+    border-bottom: 1px solid #dee0e6;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+
+
+.overflowhidden {
     overflow: hidden;
 }
 
+.textcultura {
+    small {
+        color: #d7a110;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-weight: 600;
+        color: #231f20;
+        width: 100%;
+        font-size: 18px;
+
+        @media (max-width: 768px) {
+            width: 40%;
+        }
+    }
+}
+
+.imgcultura {
+
+    width: 35%;
+    height: auto;
+}
+
+.culturatext {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.bannercultura {
+    margin-bottom: 15px;
+
+
+    @media (max-width: 768px) {
+
+        img {
+            width: 300px;
+            height: 250px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+    }
+}
+
+.imgcinema {
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.imgcinemamobile {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+
+    }
+
+    img {
+        @media (max-width: 768px) {
+            width: 300px;
+            height: 100px;
+            margin-left: 10px;
+        }
+    }
+}
+
+#culturaimg {
+    width: 160px;
+    height: 105px;
+
+
+
+
+    @media (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+.mobilecultura {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.saboresimg {
+    width: 300px;
+    height: 197px;
+
+    @media (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+.textsabores {
+    width: 95%;
+
+    @media (max-width: 768px) {
+        margin-left: 10px;
+    }
+
+
+    small {
+        color: #d7a110;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-weight: 600;
+        color: #231f20;
+        width: 100%;
+        font-size: 18px;
+        margin: 0px;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            width: 250px;
+        }
+    }
+}
+
+.folhaPlay {
+    width: 210px;
+    height: 75px;
+}
+
+.imgimtem {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 0px;
+    margin-right: 20px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .iconeVideo {
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 72px;
+        height: 72px;
+        fill: #fff;
+
+        @media (max-width: 768px) {
+            width: 42px;
+            height: 42px;
+            top: 45%;
+            left: 14%;
+        }
+    }
+
+    .lazyvideos {
+        width: 300px;
+        height: 180px;
+
+        @media (max-width: 768px) {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    }
+}
+
+.folhavideos {
+
+
+    @media (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+
+.textitem {
+    margin-left: 5px;
+
+
+    @media (max-width: 768px) {
+        margin-left: 10px;
+    }
+
+    small {
+        color: #d7a110;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-weight: 600;
+        color: #231f20;
+        width: 100%;
+        font-size: 18px;
+
+        @media (max-width: 768px) {
+            width: 270px;
+            font-size: 17px;
+            ;
+        }
+    }
+}
+
+.podcastlogos {
+    display: flex;
+}
+
+.homegridfull {
+
+    @media (max-width: 768px) {
+        margin-left: 5px;
+    }
+
+}
+
+.logoRadio {
+    width: 40%;
+    max-width: 219px;
+    max-height: 85px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        width: 65%;
+        margin-left: -15px;
+        margin-bottom: 20px;
+    }
+}
+
+.titlepadrao .logoRadio .st1 {
+    fill: #fcd331;
+}
+
+.titlepadrao .logoRadio .st0 {
+    fill: #fcc132;
+}
+
+.titlepadrao .logoRadio .st0 {
+    fill: #fcc132;
+}
+
+.titlepadrao .logoRadio .st2 {
+    fill: #fae52c;
+}
+
+.folhaimg {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        margin-left: 5px;
+    }
+
+}
+
+
+.oucaradio {
+    border: 1px solid #dee0e6;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 316px;
+    margin-left: 0px;
+    padding: 20px 20px;
+    height: 70px;
+    padding-top: 25px;
+
+    @media (max-width: 768px) {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        margin: 20px -55px;
+        margin-left: 10px;
+        width: 370px;
+    }
+}
+
+
+.btRadio {
+    padding: 8px 20px 8px 10px;
+    color: #231f20;
+    font-weight: bold;
+    width: auto;
+    vertical-align: middle;
+    background: #f7d637;
+    border-radius: 6px;
+
+    svg {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}
+
+.linkProgramacao {
+    font-weight: 600;
+    color: #d7a110;
+    margin-left: 20px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.podcastonline {
+    display: inline-flex;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    @media (max-width: 768px) {
+        margin-left: -250px;
+        display: block;
+        margin-top: 80px;
+    }
+
+
+    .logoPodcasts {
+        height: 80px;
+        width: auto;
+        max-width: 220px;
+        margin-top: 5px;
+    }
+
+    .logospotify {
+        width: 166px;
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .deezerlogo {
+        width: 166px;
+        height: 50px
+    }
+
+    .soundlogo {
+        width: 166px;
+        height: 50px
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    li {
+        margin-right: 35px;
+    }
+}
+
+.podcastonline svg.logoPodcasts .st0 {
+    fill: #f9e52b;
+}
+
+.podcastonline svg.logoPodcasts .st2 {
+    fill: #231f20;
+}
+
+.podcastonline svg.logoPodcasts .st3 {
+    fill: #fcc031;
+}
+
+.podcastonline svg.logoPodcasts .st0 {
+    fill: #f9e52b;
+}
+
+.podcastonline svg.logoPodcasts .st1 {
+    fill: #fbd22f;
+}
+
+.menumobilehamburger {
+    display: none;
+
+    @media (max-width: 768px) {
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 30px;
+
+    }
+
+}

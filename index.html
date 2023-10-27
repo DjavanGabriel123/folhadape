@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/Css/style.css">
     <link rel="shortcut icon" href="Image/apple-icon-57x57.png" type="image/x-icon" />
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet"
@@ -23,7 +21,9 @@
 
 <body>
     <div class="container_16">
-        <div class="hamburger">☰ <span></span>MENU</div>
+        <div class="grid_8 menumobilehamburger">
+        </div>
+        <div class="hamburger" onclick="showMenuHamburger();">☰ <span></span>MENU</div>
 
         <div class="nav-bar  prefix_2 suffix_2">
             <div class="icontopo">
@@ -132,12 +132,17 @@
                 <div class="topocontent">
                     <div class="grid_4">
                         <div class="menubusca">
-                            <button aria-label="botão menu" class="menuicon">
-                                <div><span></span></div>
+                            <button aria-label="botão menu">
+                                <div clas="botaomobile"><span><span class="material-symbols-outlined">
+                                            menu
+                                        </span></span></div>
                             </button>
 
                             <div class="formbusca">
                                 <button aria-label="botão buscar" class="buscarmascara"></button>
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -151,6 +156,18 @@
                                     alt="Logo Folhade Pernambuco comemorativa de 25 anos">
                             </a>
                         </h1>
+                    </div>
+
+                    <div class="grid_4">
+
+                        <div class="menubuscaright">
+                            <div class="formbuscamobile">
+                                <button aria-label="botão buscar" class="buscarmascara"></button>
+                                <span class="material-symbols-outlined" style="padding-left: 0px;">
+                                    search
+                                </span>
+                            </div>
+                        </div>
                     </div>
 
                     <a href="https://www.folhape.com.br/edicao-impressa/2561/21-10-2023/" class="leiaJornal"
@@ -693,45 +710,50 @@
         </div>
 
         <div class="grid_4 homegridfull">
-            <a href="https://www.folhape.com.br/colunistas/blogdafolha/alepe-derruba-vetos-do-governo-do-estado-a-ldo/40497/"
-                title="Alepe derruba vetos do Governo do Estado à LDO" class="noticiaLink noticiaFoto">
-                <picture>
-                    <source media="(max-width: 750px)"
-                        srcset="https://cdn.folhape.com.br/img/c/485/320/dn_arquivo/2023/09/whatsapp-image-2023-09-19-at-084226.jpeg">
-                    <source media="(max-width: 940px)"
-                        srcset="https://cdn.folhape.com.br/img/c/788/520/dn_arquivo/2023/09/whatsapp-image-2023-09-19-at-084226.jpeg">
-                    <source
-                        srcset="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/09/whatsapp-image-2023-09-19-at-084226.jpeg">
-                    <img class="lazy"
-                        src="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/09/whatsapp-image-2023-09-19-at-084226.jpeg"
-                        alt="Alepe derruba vetos do Governo do Estado à LDO">
-                </picture>
-                <div>
-                    <h3 class="blogfolhatextnoticia">Alepe derruba vetos do Governo do Estado à LDO</h3>
-                </div>
-            </a>
+            <div class="homegridfull">
+                <a href="https://www.folhape.com.br/colunistas/blogdafolha/alepe-derruba-vetos-do-governo-do-estado-a-ldo/40497/"
+                    title="Alepe derruba vetos do Governo do Estado à LDO" class="noticiaLink noticiaFoto">
+                    <picture>
+                        <source media="(max-width: 750px)"
+                            srcset="https://cdn.folhape.com.br/img/c/485/320/dn_arquivo/2023/09/whatsapp-image-2023-09-19-at-084226.jpeg">
+                        <source media="(max-width: 940px)"
+                            srcset="https://cdn.folhape.com.br/img/c/788/520/dn_arquivo/2023/09/whatsapp-image-2023-09-19-at-084226.jpeg">
+                        <source
+                            srcset="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/09/whatsapp-image-2023-09-19-at-084226.jpeg">
+                        <img class="lazy"
+                            src="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/09/whatsapp-image-2023-09-19-at-084226.jpeg"
+                            alt="Alepe derruba vetos do Governo do Estado à LDO">
+                    </picture>
+                    <div>
+                        <h3 class="blogfolhatextnoticia">Alepe derruba vetos do Governo do Estado à LDO</h3>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <div class="grid_4 homegridfull">
-            <a href="https://www.folhape.com.br/colunistas/blogdafolha/humberto-pede-a-alemanha-traslado-dos-restos-mortais-de-mauricio-de-nassau-para-pernambuco/40495/"
-                title="Humberto pede à Alemanha traslado dos restos mortais de Maurício de Nassau para Pernambuco"
-                class="noticiaLink noticiaFoto">
-                <picture>
-                    <source media="(max-width: 750px)"
-                        srcset="https://cdn.folhape.com.br/img/c/485/320/dn_arquivo/2023/10/whatsapp-image-2023-10-17-at-133132.jpeg">
-                    <source media="(max-width: 940px)"
-                        srcset="https://cdn.folhape.com.br/img/c/788/520/dn_arquivo/2023/10/whatsapp-image-2023-10-17-at-133132.jpeg">
-                    <source
-                        srcset="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/10/whatsapp-image-2023-10-17-at-133132.jpeg">
-                    <img class="lazy"
-                        src="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/10/whatsapp-image-2023-10-17-at-133132.jpeg"
-                        alt="Humberto pede à Alemanha traslado dos restos mortais de Maurício de Nassau para Pernambuco">
-                </picture>
-                <div>
-                    <h3 class="blogfolhatextnoticia">Humberto pede à Alemanha traslado dos restos mortais de Maurício de
-                        Nassau para Pernambuco</h3>
-                </div>
-            </a>
+            <div class="homegridfull">
+                <a href="https://www.folhape.com.br/colunistas/blogdafolha/humberto-pede-a-alemanha-traslado-dos-restos-mortais-de-mauricio-de-nassau-para-pernambuco/40495/"
+                    title="Humberto pede à Alemanha traslado dos restos mortais de Maurício de Nassau para Pernambuco"
+                    class="noticiaLink noticiaFoto">
+                    <picture>
+                        <source media="(max-width: 750px)"
+                            srcset="https://cdn.folhape.com.br/img/c/485/320/dn_arquivo/2023/10/whatsapp-image-2023-10-17-at-133132.jpeg">
+                        <source media="(max-width: 940px)"
+                            srcset="https://cdn.folhape.com.br/img/c/788/520/dn_arquivo/2023/10/whatsapp-image-2023-10-17-at-133132.jpeg">
+                        <source
+                            srcset="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/10/whatsapp-image-2023-10-17-at-133132.jpeg">
+                        <img class="lazy"
+                            src="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/10/whatsapp-image-2023-10-17-at-133132.jpeg"
+                            alt="Humberto pede à Alemanha traslado dos restos mortais de Maurício de Nassau para Pernambuco">
+                    </picture>
+                    <div>
+                        <h3 class="blogfolhatextnoticia">Humberto pede à Alemanha traslado dos restos mortais de
+                            Maurício de
+                            Nassau para Pernambuco</h3>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <div class="grid_4 homegridfull">
@@ -769,7 +791,8 @@
         </div>
 
 
-        <a href="ultimas-noticias/" title="Mais Notícias" class="linkMaismobile" style="margin-left: 150px;">
+        <a href="ultimas-noticias/" title="Mais Notícias" class="linkMaismobile"
+            style="margin-left: 150px; padding-top: 0px;">
             Veja mais
             <svg viewBox="0 0 24 24">
                 <path
@@ -1281,8 +1304,7 @@
 
         <div class="grid_16 overflowhidden">
             <div class="carrosel">
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="10"
-                    style="width: 300px; margin-right: 20px;">
+                <div class="swiperslide" data-swiper-slide-index="10">
                     <div class="playerColunistas"><a
                             href="https://www.folhape.com.br/colunistas/carreira-e-mercado/os-limites-da-informalidade/40502/"
                             class="colunistasPlayer" title="Os limites da informalidade">
@@ -1304,8 +1326,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="10"
-                    style="width: 300px; margin-right: 20px;">
+                <div class="swiperslide" data-swiper-slide-index="10">
                     <div class="playerColunistas"><a
                             href="https://www.folhape.com.br/colunistas/carreira-e-mercado/os-limites-da-informalidade/40502/"
                             class="colunistasPlayer" title="Os limites da informalidade">
@@ -1327,8 +1348,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="10"
-                    style="width: 300px; margin-right: 20px;">
+                <div class="swiperslide" data-swiper-slide-index="10">
                     <div class="playerColunistas"><a
                             href="https://www.folhape.com.br/colunistas/carreira-e-mercado/os-limites-da-informalidade/40502/"
                             class="colunistasPlayer" title="Os limites da informalidade">
@@ -1350,8 +1370,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="10"
-                    style="width: 300px; margin-right: 20px;">
+                <div class="swiperslide" data-swiper-slide-index="10">
                     <div class="playerColunistas"><a
                             href="https://www.folhape.com.br/colunistas/carreira-e-mercado/os-limites-da-informalidade/40502/"
                             class="colunistasPlayer" title="Os limites da informalidade">
@@ -1373,8 +1392,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="10"
-                    style="width: 300px; margin-right: 20px;">
+                <div class="swiperslide" data-swiper-slide-index="10">
                     <div class="playerColunistas"><a
                             href="https://www.folhape.com.br/colunistas/carreira-e-mercado/os-limites-da-informalidade/40502/"
                             class="colunistasPlayer" title="Os limites da informalidade">
@@ -1396,8 +1414,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="10"
-                    style="width: 300px; margin-right: 20px;">
+                <div class="swiperslide" data-swiper-slide-index="10">
                     <div class="playerColunistas"><a
                             href="https://www.folhape.com.br/colunistas/carreira-e-mercado/os-limites-da-informalidade/40502/"
                             class="colunistasPlayer" title="Os limites da informalidade">
@@ -1419,8 +1436,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="10"
-                    style="width: 300px; margin-right: 20px;">
+                <div class="swiperslide" data-swiper-slide-index="10">
                     <div class="playerColunistas"><a
                             href="https://www.folhape.com.br/colunistas/carreira-e-mercado/os-limites-da-informalidade/40502/"
                             class="colunistasPlayer" title="Os limites da informalidade">
@@ -1442,8 +1458,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="10"
-                    style="width: 300px; margin-right: 20px;">
+                <div class="swiperslide" data-swiper-slide-index="10" style="width: 300px; margin-right: 20px;">
                     <div class="playerColunistas"><a
                             href="https://www.folhape.com.br/colunistas/carreira-e-mercado/os-limites-da-informalidade/40502/"
                             class="colunistasPlayer" title="Os limites da informalidade">
@@ -1485,10 +1500,551 @@
             </div>
         </div>
 
+        <div class="clear"></div>
+
+        <div class="bordercarrosel1"></div>
+        <div class="bordercarrosel2"></div>
+
+        <div class="grid_16">
+            <h2 class="titlepadrao" style="margin-left: -8px;">
+                Cultura+
+                <a href="cultura/" title="Mais Cultura" class="linkMais">
+                    Veja mais
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z">
+                        </path>
+                    </svg>
+                </a>
+            </h2>
+        </div>
+
+        <section class="grid_12 homegridfull">
+            <div class="grid_4 nomarginleft" style="margin-left: 0px;"><a
+                    href="https://www.folhape.com.br/cultura/beyonce-coldplay-rihanna-pesquisadores-elegem-as-melhores-musicas/298126/"
+                    title="Beyoncé, Coldplay, Rihanna: pesquisadores elegem as melhores músicas para fazer sexo"
+                    class="noticiaLinknews">
+                    <picture>
+                        <img class="culturamobile"
+                            src="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/08/whatsapp-image-2023-08-04-at-075516.jpeg"
+                            alt="Beyoncé, Coldplay, Rihanna: pesquisadores elegem as melhores músicas para fazer sexo">
+                    </picture>
+                    <div class="textcultura">
+                        <small>Música</small>
+                        <h3>Beyoncé, Coldplay, Rihanna: pesquisadores elegem as melhores músicas para fazer sexo</h3>
+                    </div>
+                </a></div>
+
+            <div class="grid_4 nomarginright"><a
+                    href="https://www.folhape.com.br/cultura/o-lado-bom-de-ser-traida-thriller-erotico-da-netflix-traz/298166/"
+                    title="&quot;O Lado Bom de Ser Traída&quot;: thriller erótico da Netflix traz suspense e cenas picantes "
+                    class="noticiaLinknews">
+                    <picture>
+                        <img class="culturamobile"
+                            src="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/10/enquadramento-capa-23.jpg"
+                            alt="&quot;O Lado Bom de Ser Traída&quot;: thriller erótico da Netflix traz suspense e cenas picantes">
+                    </picture>
+                    <div class="textcultura">
+                        <small>CRÍTICA</small>
+                        <h3>"O Lado Bom de Ser Traída": thriller erótico da Netflix traz suspense e cenas picantes </h3>
+                    </div>
+                </a></div>
+
+            <div class="grid_4 nomarginright"><a
+                    href="https://www.folhape.com.br/cultura/entre-a-flor-e-a-cruz-legitima-a-musicalidade-nordestina-da-banda-de/298037/"
+                    title="&quot;Entre a Flor e a Cruz&quot; legitima a musicalidade nordestina da Banda de Pau e Corda "
+                    class="noticiaLinknews">
+                    <picture>
+                        <img class="culturamobile"
+                            src="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/10/design-sem-nome-2_5.jpg"
+                            alt="&quot;Entre a Flor e a Cruz&quot; legitima a musicalidade nordestina da Banda de Pau e Corda">
+                    </picture>
+                    <div class="textcultura">
+                        <small>MÚSICA</small>
+                        <h3>"Entre a Flor e a Cruz" legitima a musicalidade nordestina da Banda de Pau e Corda </h3>
+                    </div>
+                </a></div>
 
 
 
+            <!--MOBILE CULTURA+-->
+            <div class="mobilecultura">
+                <div class="grid_6 nomarginleft" style="margin-left: 0px; margin-top: 10px;">
+                    <div class="display">
+                        <img id="culturaimg"
+                            src="https://cdn.folhape.com.br/img/c/220/144/dn_arquivo/2023/10/car-4.jpg">
+                        <div class="culturatext">
+                            <span>Futebol</span>
+                            <h3>Bolívia demite técnico Gustavo Costas; Antônio Carlos Zago é cotado como substituto</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIM MOBILE-->
 
+
+            <div class="clear"></div>
+
+            <div class="grid_6 nomarginleft" style="margin-left: 0px; margin-top: 10px;">
+                <div class="display">
+                    <img id="culturaimg" src="https://cdn.folhape.com.br/img/c/220/144/dn_arquivo/2023/10/car-4.jpg">
+                    <div class="culturatext">
+                        <span>Futebol</span>
+                        <h3>Bolívia demite técnico Gustavo Costas; Antônio Carlos Zago é cotado como substituto</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="grid_6 nomarginright" style="margin-right: 0px; margin-top: 10px;">
+                <div class="display">
+                    <img id="culturaimg" src="https://cdn.folhape.com.br/img/c/220/144/dn_arquivo/2023/10/car-4.jpg">
+                    <div class="culturatext">
+                        <span>Futebol</span>
+                        <h3>Bolívia demite técnico Gustavo Costas; Antônio Carlos Zago é cotado como substituto</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="grid_4 homegridfull">
+            <div class="bannercultura">
+                <img src="Image/2211259963991551751.gif">
+            </div>
+
+            <div class="imgcinema">
+                <img src="https://tpc.googlesyndication.com/simgad/2877753934261063570" width="300" height="100" alt=""
+                    class="img_ad">
+            </div>
+
+            <div class="imgcinema">
+                <img src="Image/11482812175517476802.png" width="300" height="100" alt="">
+            </div>
+        </aside>
+
+        <!--MOBILE BANNER-->
+        <div class="imgcinemamobile">
+            <img src="https://tpc.googlesyndication.com/simgad/2877753934261063570">
+        </div>
+
+        <div class="imgcinemamobile">
+            <img src="Image/11482812175517476802.png">
+        </div>
+        <!--FIM MOBILE-->
+
+        <div class="clear"></div>
+
+        <div class="bordercarrosel1"></div>
+
+        <div class="grid_16">
+            <h2 class="titlepadrao">
+                Sabores
+                <a href="https://www.folhape.com.br/sabores/" title="Mais Sabores" class="linkMais ">
+                    Veja mais
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z">
+                        </path>
+                    </svg>
+                </a>
+            </h2>
+        </div>
+
+        <div class="grid_4">
+            <picture>
+                <img class="saboresimg" src="https://cdn.folhape.com.br/img/c/940/620/dn_arquivo/2023/10/unnamed-25.jpg"
+                    alt="Halloween da rede Porks terá chope roxo, neste sábado (28) em 30 cidades, incluindo Recife">
+            </picture>
+            <div class="textsabores">
+                <small>Sabores</small>
+                <h3>Halloween da rede Porks terá chope roxo, neste sábado (28) em 30 cidades, incluindo Recife </h3>
+            </div>
+            </a>
+        </div>
+
+        <div class="grid_4">
+            <picture>
+                <img class="saboresimg" src="Image/dani.jpg"
+                    alt="Halloween da rede Porks terá chope roxo, neste sábado (28) em 30 cidades, incluindo Recife">
+            </picture>
+            <div class="textsabores">
+                <small>Sabores</small>
+                <h3>Halloween da rede Porks terá chope roxo, neste sábado (28) em 30 cidades, incluindo Recife </h3>
+            </div>
+            </a>
+        </div>
+
+        <div class="grid_4">
+            <picture>
+                <img class="saboresimg" src="Image/pudim-de-casca-de-manga-2.jpg"
+                    alt="Halloween da rede Porks terá chope roxo, neste sábado (28) em 30 cidades, incluindo Recife">
+            </picture>
+            <div class="textsabores">
+                <small>Sabores</small>
+                <h3>Halloween da rede Porks terá chope roxo, neste sábado (28) em 30 cidades, incluindo Recife </h3>
+            </div>
+            </a>
+        </div>
+
+        <div class="grid_4">
+            <picture>
+                <img class="saboresimg" src="Image/img-6916-2.jpg"
+                    alt="Halloween da rede Porks terá chope roxo, neste sábado (28) em 30 cidades, incluindo Recife">
+            </picture>
+            <div class="textsabores">
+                <small>Sabores</small>
+                <h3>Halloween da rede Porks terá chope roxo, neste sábado (28) em 30 cidades, incluindo Recife </h3>
+            </div>
+            </a>
+        </div>
+
+        <a href="ultimas-noticias/" title="Mais Notícias" class="linkMaismobile" style="margin-left: 150px;">
+            Veja mais
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z">
+                </path>
+            </svg>
+        </a>
+
+        <div class="clear"></div>
+
+        <div class="bordercarrosel1" style="margin-top: 60px; width: 97%;"></div>
+        <div class="bordercarrosel2" style="width: 97%;"></div>
+
+
+        <div class="grid_16">
+            <h2 class="titlepadrao">
+                <img src="https://www.folhape.com.br/application/themes/folhape.com.br/gfx/folhaPlay.png?v=166"
+                    class="folhaPlay" alt="Folha Play">
+
+                <a href="videos/" title="Vídeos" class="linkMais">
+                    Veja mais
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z">
+                        </path>
+                    </svg>
+                </a>
+            </h2>
+        </div>
+
+        <div class="grid_4">
+
+            <div class="videosimg">
+
+                <div class="imgimtem">
+                    <svg class="iconeVideo" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+
+                        </path>
+                    </svg>
+
+                    <img class="lazyvideos" data-src="https://i2.ytimg.com/vi/ohQaxeoUmNE/mqdefault.jpg"
+                        src="https://cdn.folhape.com.br/img/c/320/180/logo.jpg">
+
+                    <div class="textitem">
+                        <small>VIDA PLENA</small>
+                        <h3>Doenças no ombro: saiba quais são as principais e como tratá-las</h3>
+                    </div>
+                </div>
+
+
+                <div class="imgimtem">
+                    <svg class="iconeVideo" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+
+                        </path>
+                    </svg>
+
+                    <img class="lazyvideos" data-src="https://i2.ytimg.com/vi/ohQaxeoUmNE/mqdefault.jpg"
+                        src="https://cdn.folhape.com.br/img/c/320/180/logo.jpg">
+
+                    <div class="textitem">
+                        <small>VIDA PLENA</small>
+                        <h3>Doenças no ombro: saiba quais são as principais e como tratá-las</h3>
+                    </div>
+                </div>
+
+                <div class="imgimtem">
+                    <svg class="iconeVideo" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+
+                        </path>
+                    </svg>
+
+                    <img class="lazyvideos" data-src="https://i2.ytimg.com/vi/ohQaxeoUmNE/mqdefault.jpg"
+                        src="https://cdn.folhape.com.br/img/c/320/180/logo.jpg">
+
+                    <div class="textitem">
+                        <small>VIDA PLENA</small>
+                        <h3>Doenças no ombro: saiba quais são as principais e como tratá-las</h3>
+                    </div>
+                </div>
+
+                <div class="imgimtem">
+                    <svg class="iconeVideo" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+
+                        </path>
+                    </svg>
+
+                    <img class="lazyvideos" data-src="https://i2.ytimg.com/vi/ohQaxeoUmNE/mqdefault.jpg"
+                        src="https://cdn.folhape.com.br/img/c/320/180/logo.jpg">
+
+                    <div class="textitem">
+                        <small>VIDA PLENA</small>
+                        <h3>Doenças no ombro: saiba quais são as principais e como tratá-las</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="ultimas-noticias/" title="Mais Notícias" class="linkMaismobile" style="margin-left: 150px;">
+            Veja mais
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z">
+                </path>
+            </svg>
+        </a>
+
+
+        <div class="clear"></div>
+
+        <div class="bordercarrosel1" style="width: 98%; margin-top: 30px;"></div>
+        <div class="bordercarrosel2" style="width: 98%;"></div>
+
+
+
+        <div class="container_16">
+            <div class="grid_16">
+                <h2 class="titlepadrao">
+                    <a href="radio-folha/" title="Rádio Folha 96.7 FM">
+                        <svg class="logoRadio" viewBox="0 0 349.7 136.6">
+                            <path class="st0"
+                                d="M203.1,109.6c-0.8,0-1.2-0.8-0.7-1.5l18.1-24.8c0.2-0.3-0.1-0.8-0.5-0.6c-2.4,0.7-4.9,1.1-7.4,1.1c-14.7,0-26.4-11.4-26.4-26.2c0-14.8,12.1-26.7,27-26.7c14.9,0,26.7,12,26.7,26.6c0,6.1-1.9,11.8-5.3,16.6l-25,34c-0.7,0.9-1.8,1.5-2.9,1.5H203.1z M230.2,70.3c2.7-3.7,4.1-7.7,4.1-12.6c0-11.8-9.3-21.1-21-21.1c-11.9,0-21.3,9.3-21.3,21c0,11.9,9.4,21.3,21.3,21.3C220.3,78.9,226.3,75.6,230.2,70.3z">
+                            </path>
+                            <polygon class="st1"
+                                points="340.6,13.8 340.6,90.9 349.7,93.2 349.7,4.8 132.1,4.8 115.1,13.8"></polygon>
+                            <polygon class="st0" points="14.7,4.8 0,4.8 0,5.6 14.7,9.3"></polygon>
+                            <polygon class="st0" points="101.1,13.8 115.1,13.8 132.1,4.8 101.1,4.8"></polygon>
+                            <polygon class="st2"
+                                points="340.6,127.6 9,127.6 9,70.3 0,75.1 0,136.6 349.7,136.6 349.7,93.2 340.6,90.9">
+                            </polygon>
+                            <polygon class="st1" points="9,13.8 14.7,13.8 14.7,9.3 0,5.6 0,75.1 9,70.3"></polygon>
+                            <path d="M24.7,32.3h27.2v11.4H36.7v20.7h12v11.9h-12V111H24.7V32.3z"></path>
+                            <path
+                                d="M86.8,93.4c0,11-3.7,18.5-15.2,18.5h-2c-11.4,0-15.4-7.5-15.4-18.5V49.7c0-10.9,4.1-18.1,15.3-18.1h2c11.6,0,15.3,7.2,15.3,18V93.4z M74.6,49c0-4.1-1.4-6-4.1-6c-3.1,0-4.2,2-4.2,6v45.2c0,3.4,1,6,4.3,6c3.2,0,4-2.6,4-6V49z">
+                            </path>
+                            <path d="M101.9,32.3v66.5h14.6V111H89.9V32.3H101.9z"></path>
+                            <path d="M130.9,111H119V32.3h11.9v31.5h8.1V32.3H151V111h-11.9V76.4h-8.1V111z"></path>
+                            <path
+                                d="M174.1,96.2h-8.8l-1.5,14.8h-10.7l9.6-78.6h14.2l10.3,78.6h-11.5L174.1,96.2z M166.6,84.4h6.2l-3.2-29.1L166.6,84.4z">
+                            </path>
+                            <path class="st0"
+                                d="M264.9,61.1c-4.8,0-9.3,1.4-13,3.9l0.1-0.1c-0.9,0.7-1.4,1.8-1.4,2.9l0.1,3.7c0,0.8,0.8,1.1,1.4,0.7c0,0,0.1-0.1,0.1-0.1l0,0c3.2-3.2,7.6-5.2,12.5-5.2c9.8,0,17.8,8,17.8,17.8c0,1.1-0.1,2.1-0.3,3.2c0,0,0,0,0,0c-1.7,10-10.3,17.5-21,17.5c-11.7,0-21-9.3-21-21.1c0-4.9,1.5-8.8,4.1-12.6c2.3-3.4,9.4-12.8,9.6-13.1l18.1-24.8c0.5-0.7,0.1-1.5-0.7-1.5h-3.7c-1.1,0-2.2,0.6-2.9,1.5l-25,34c-3.5,4.9-5.3,10.5-5.3,16.6c0,14.7,11.9,26.6,26.7,26.6c4.4,0,8.5-1,12.2-2.9c-0.2-0.6-0.3-1.2-0.3-1.8c0-3.1,2.6-5.6,5.7-5.6c1.1,0,2.1,0.3,3,0.9c1.9-2.2,3.4-4.7,4.6-7.4c1.3-2.9,2.1-6.2,2.1-9.6C288.6,71.7,278,61.1,264.9,61.1z">
+                            </path>
+                            <path class="st0"
+                                d="M274,106.3c0-2.6,2.3-4.8,4.9-4.8c2.7,0,4.8,2.2,4.8,4.8c0,2.7-2.2,4.8-4.8,4.8C276.3,111.1,274,109,274,106.3z">
+                            </path>
+                            <path class="st0"
+                                d="M325.8,32.4h-38.9l0,0l-11.6,0c-0.9,0-1.3,0.8-0.8,1.4l2.2,3c0.6,0.9,1.8,1.4,2.9,1.4h39.8c0.7,0,1.1,0.7,0.8,1.3l-34.3,68.5c-0.4,0.7,0.2,1.6,1,1.6h3.1c1.1,0,2.1-0.6,2.6-1.6l34.3-69.4c0.5-0.9,0.8-2.3,0.8-3.4v-1.1C327.6,33.2,326.8,32.4,325.8,32.4z">
+                            </path>
+                            <path class="st3"
+                                d="M304,109.4v-9.8h-2.2v-0.9h2.2v-1c0-2.2,0.9-3.7,3.3-3.7c0.8,0,1.5,0.3,2.2,0.7l-0.5,0.8c-0.6-0.4-1-0.5-1.7-0.5c-1.4,0-2.2,0.8-2.2,2.7v1h3.6v0.9H305v9.8H304z">
+                            </path>
+                            <path class="st3"
+                                d="M327.3,109.4v-6.5c0-2.1-1.4-3.6-3.5-3.6c-2.1,0-3.5,1.5-3.5,3.6v6.4h-1.1V103c0-2.1-1.4-3.6-3.5-3.6c-2.1,0-3.5,1.5-3.5,3.6v6.4h-1.1V98.6h1l0,1.8c0.7-1.4,2.1-2,3.5-2c1.6,0,3.4,0.7,4,2.7c0.7-1.8,2.4-2.7,4-2.7c2.7,0,4.6,1.9,4.6,4.6v6.5H327.3z">
+                            </path>
+                            <path class="st3"
+                                d="M23.7,5.3c0-0.2,0.2-0.4,0.4-0.4h6.5c3.4,0,5.3,2.3,5.3,5c0,2.1-1.2,4-3.3,4.7c-0.1,0-0.2,0.2-0.1,0.3l3.7,5.2c0.1,0.1,0,0.3-0.2,0.3h-0.7c-0.2,0-0.4-0.1-0.6-0.3l-3.6-5.1C31.1,15.1,31,15,30.9,15c-0.1,0-0.2,0-0.3,0h-5.4c-0.2,0-0.3,0.1-0.3,0.3v4.9c0,0.2-0.2,0.4-0.4,0.4h-0.5c-0.2,0-0.4-0.2-0.4-0.4V5.3z M30.6,6.1h-5.4c-0.2,0-0.3,0.1-0.3,0.3v7.3c0,0.2,0.1,0.3,0.3,0.3h5.4c2.7,0,4.2-1.8,4.2-3.9C34.8,7.9,33.3,6.1,30.6,6.1z">
+                            </path>
+                            <path class="st3"
+                                d="M47,0c0.1-0.1,0.3,0,0.4,0.1l0.3,0.5c0.1,0.1,0,0.3-0.1,0.4L43,3.5c-0.1,0.1-0.3,0-0.4-0.1l-0.2-0.3c-0.1-0.1,0-0.3,0.1-0.4L47,0z M44.2,5.3C44.3,5.1,44.5,5,44.8,5h0.6c0.2,0,0.4,0.1,0.5,0.3l6.8,14.9c0.1,0.1,0,0.3-0.2,0.3h-0.6c-0.2,0-0.4-0.1-0.5-0.3l-1.3-2.9C50,17.1,49.8,17,49.7,17h-9.2c-0.2,0-0.3,0.1-0.4,0.3l-1.3,2.9c-0.1,0.2-0.3,0.3-0.5,0.3h-0.6c-0.2,0-0.3-0.2-0.2-0.3L44.2,5.3z M45.2,6.5c-0.1-0.1-0.2-0.1-0.2,0l-4.1,9.2c-0.1,0.1,0,0.3,0.2,0.3h8.2c0.1,0,0.2-0.1,0.2-0.3L45.2,6.5z">
+                            </path>
+                            <path class="st3"
+                                d="M55.3,20.5c-0.2,0-0.4-0.2-0.4-0.4V5.3C55,5.1,55.1,5,55.3,5h5.7c4.7,0,7.3,3.4,7.3,7.8c0,4.4-2.5,7.8-7.3,7.8H55.3z M61,6.1h-4.6c-0.2,0-0.3,0.1-0.3,0.3v12.7c0,0.2,0.1,0.3,0.3,0.3H61c3.9,0,6.1-2.9,6.1-6.6C67.1,9,65,6.1,61,6.1z">
+                            </path>
+                            <path class="st3"
+                                d="M71.4,5.3c0-0.2,0.2-0.4,0.4-0.4h0.5c0.2,0,0.4,0.2,0.4,0.4v14.9c0,0.2-0.2,0.4-0.4,0.4h-0.5c-0.2,0-0.4-0.2-0.4-0.4V5.3z">
+                            </path>
+                            <path class="st3"
+                                d="M75.5,12.7c0-4.5,3.6-8.1,8.1-8.1c4.5,0,8.1,3.6,8.1,8.1c0,4.5-3.6,8.1-8.1,8.1C79.2,20.8,75.5,17.2,75.5,12.7z M76.7,12.7c0,3.8,3.1,6.9,6.9,6.9c3.8,0,6.9-3.1,6.9-6.9c0-3.8-3.1-6.9-6.9-6.9C79.9,5.8,76.7,9,76.7,12.7z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="radio-folha/" title="Rádio Folha 96.7 FM" class="linkMais">
+                        Veja mais
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z">
+                            </path>
+                        </svg>
+                    </a>
+                </h2>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="videosimg">
+            <div class="folhaimg">
+                <img class="folhavideos" data-src="https://i2.ytimg.com/vi/ohQaxeoUmNE/mqdefault.jpg"
+                    src="Image/esposa-visitando-seu-marido-doente.jpg">
+
+                <div class="textitem">
+                    <small>VIDA PLENA</small>
+                    <h3>Doenças no ombro: saiba quais são as principais e como tratá-las</h3>
+                </div>
+            </div>
+
+
+            <div class="folhaimg">
+                <img class="folhavideos" data-src="https://i2.ytimg.com/vi/ohQaxeoUmNE/mqdefault.jpg"
+                    src="Image/whatsapp-image-2023-10-14-at-125806.jpeg">
+
+                <div class="textitem">
+                    <small>VIDA PLENA</small>
+                    <h3>Doenças no ombro: saiba quais são as principais e como tratá-las</h3>
+                </div>
+            </div>
+
+
+            <div class="folhaimg">
+                <img class="folhavideos" data-src="https://i2.ytimg.com/vi/ohQaxeoUmNE/mqdefault.jpg"
+                    src="Image/mcamg-abr-280918-6354-1.jpg">
+
+                <div class="textitem">
+                    <small>VIDA PLENA</small>
+                    <h3>Doenças no ombro: saiba quais são as principais e como tratá-las</h3>
+                </div>
+            </div>
+
+
+            <div class="folhaimg">
+                <img class="folhavideos" data-src="https://i2.ytimg.com/vi/ohQaxeoUmNE/mqdefault.jpg"
+                    src="Image/whatsapp-image-2023-09-30-at-125130.jpeg">
+
+                <div class="textitem">
+                    <small>VIDA PLENA</small>
+                    <h3>Doenças no ombro: saiba quais são as principais e como tratá-las</h3>
+                </div>
+            </div>
+        </div>
+
+        <a href="ultimas-noticias/" title="Mais Notícias" class="linkMaismobile" style="margin-left: 150px;">
+            Veja mais
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z">
+                </path>
+            </svg>
+        </a>
+
+
+        <div class="grid_16 podcastlogos">
+            <div class="grid_4">
+
+                <div class="oucaradio" style="margin-left: 0px;">
+                    <a href="radio-folha/no-ar/" title="Ouça a Rádio Folha 96.7 FM" target="_blank" class="btRadio">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M11.4 1.02C6.62 1.33 3 5.52 3 10.31V17c0 1.66 1.34 3 3 3h1c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2H5v-1.71C5 6.45 7.96 3.11 11.79 3 15.76 2.89 19 6.06 19 10v2h-2c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h1c1.66 0 3-1.34 3-3v-7c0-5.17-4.36-9.32-9.6-8.98z">
+                            </path>
+                        </svg>
+                        Ouça a Rádio
+                    </a>
+
+                    <a href="radio-folha/programacao/" title="Programação da Rádio Folha 96.7 FM"
+                        class="linkProgramacao">Programação</a>
+                </div>
+            </div>
+
+
+            <div class="grid_12 nomarginright">
+                <section class="podcastonline">
+                    <svg class="logoPodcasts" viewBox="0 0 421.1 178.6">
+                        <polygon class="st0"
+                            points="412.1,146.2 277.1,146.2 277.1,155.2 421.1,155.2 421.1,109 412.1,106.8 			">
+                        </polygon>
+                        <rect x="93.1" y="146.2" class="st0" width="163" height="9"></rect>
+                        <polygon class="st1"
+                            points="202.1,23.2 202.1,32.2 412.2,32.2 412.1,106.9 421.1,109 421.1,23.2 			"></polygon>
+                        <path class="st2" d="M93.1,50.5h27.2v11.4H105v20.7h12.1v11.9H105v34.6H93.1V50.5z"></path>
+                        <path class="st2"
+                            d="M155.1,111.6c0,11-3.7,18.5-15.2,18.5h-2c-11.4,0-15.4-7.5-15.4-18.5V67.8c0-10.9,4.1-18.1,15.3-18.1h2c11.6,0,15.3,7.2,15.3,18V111.6z M143,67.2c0-4.1-1.4-6-4.1-6c-3.1,0-4.2,2-4.2,6v45.2c0,3.4,0.9,6,4.3,6c3.2,0,4-2.6,4-6V67.2z">
+                        </path>
+                        <path class="st2" d="M170.2,50.5V117h14.6v12.2h-26.5V50.5H170.2z"></path>
+                        <path class="st2" d="M199.3,129.1h-11.9V50.5h11.9V82h8.1V50.5h11.9v78.6h-11.9V94.6h-8.1V129.1z">
+                        </path>
+                        <path class="st2"
+                            d="M242.4,114.3h-8.8l-1.5,14.8h-10.7l9.6-78.6h14.2l10.3,78.6H244L242.4,114.3z M234.9,102.6h6.2L238,73.5L234.9,102.6z">
+                        </path>
+                        <path class="st3"
+                            d="M396.1,100.3H392c-1.5,0-2.8,0.8-3.4,2.1l0,0c-4.7,11-15.6,18.7-28.3,18.7c-9.5,0-18.1-4.3-23.7-11.1l-0.2-0.3c-4.3-5.3-6.9-12-6.9-19.4c0-7,2.3-13.5,6.3-18.6c-1.5-2.7-3.2-5.2-5.3-7.5c-5.9,6.9-9.5,15.8-9.5,25.6c0,21.7,17.6,39.2,39.2,39.2c17.4,0,32.2-11.4,37.3-27.1C397.7,101.1,397,100.3,396.1,100.3z">
+                        </path>
+                        <path class="st3"
+                            d="M335.1,112c3.6-6.1,5.7-13.2,5.7-20.8c0-20.8-15.5-37.9-35.4-40.2c-13.2-1.2-26.6,4.4-35,15.8c-5.3,7.3-8,15.6-8.1,24.3l0,56.9v4.7c0,1.5,1.2,2.6,2.6,2.6h3.3c1.5,0,2.6-1.2,2.6-2.6V148h0l0.1-33.8c0-0.5,0.8-0.9,1.1-0.3c2.2,2.9,4.8,5.5,7.8,7.8c17.3,12.7,41.2,9.5,54.1-8.1C334.3,113.1,334.7,112.6,335.1,112z M327.1,108.7c-10.3,14.1-29.7,17-43.7,6.7c-8.3-6.1-12.5-15.4-12.6-24.9c0-6.7,1.9-12.7,6.1-18.4c10.2-13.9,29.4-16.9,43.2-6.7C334.3,75.6,337.3,94.8,327.1,108.7z">
+                        </path>
+                        <path class="st3"
+                            d="M360.3,50.5c-10.6,0-20.2,4.2-27.3,11c2,2.2,3.8,4.6,5.3,7.2c5.6-5.7,13.4-9.3,22-9.3c13.5,0,24.9,8.7,29.1,20.7l0,0c-0.1,0.6-0.6,1.1-1.4,1.1l-42.6,0c-1.2,0-1.8,1.2-1.2,2.1l3.2,4.5c0.9,1.3,2.6,2.3,4.3,2.3h39.4l0,0h7.1c0.8,0,1.3-0.7,1.3-1.3c0,0,0-0.1,0-0.1C399,67.6,381.7,50.5,360.3,50.5z">
+                        </path>
+                        <path class="st1"
+                            d="M14.1,89.3c0-44,31.2-80.7,72.6-89.3C38.6,1.3,0,40.8,0,89.3c0,48.5,38.6,87.9,86.8,89.3C45.3,170,14.1,133.3,14.1,89.3z">
+                        </path>
+                        <path class="st1"
+                            d="M41.3,89.2c0-26.4,15.5-49.2,37.9-59.7c-27.5,6-48.1,30.4-48.1,59.7s20.6,53.8,48.1,59.7C56.8,138.4,41.3,115.6,41.3,89.2z">
+                        </path>
+                        <path class="st2"
+                            d="M94.3,26.9v5.3h-1.2V16.8c2.2,0,4.5,0,6.8,0c6.7,0,6.7,10.1,0,10.1H94.3z M94.3,17.9v7.9h5.6c5.1,0,5.1-7.9,0-7.9H94.3z">
+                        </path>
+                        <path class="st2"
+                            d="M122.4,24.6c0,4.1-2.6,8-7.8,8c-5.2,0-7.8-3.9-7.8-8c0-4.1,2.6-7.9,7.8-7.9C119.8,16.6,122.4,20.4,122.4,24.6z M108,24.5c0,3.5,2.2,6.9,6.6,6.9c4.4,0,6.6-3.4,6.6-6.9c0-3.6-2.2-6.9-6.6-6.9C110.2,17.7,108,20.9,108,24.5z">
+                        </path>
+                        <path class="st2"
+                            d="M138.1,24.4c0.1,3.9-2.4,7.9-7.8,7.9c-1.7,0-3.5,0-5.2,0V16.8c1.7,0,3.5,0,5.2,0C135.5,16.8,138.1,20.6,138.1,24.4z M126.3,17.9v13.2h4c4.6,0,6.7-3.4,6.6-6.7c-0.1-3.2-2.2-6.4-6.6-6.4H126.3z">
+                        </path>
+                        <path class="st2"
+                            d="M153.6,30.1c-1.5,1.5-3.6,2.3-5.6,2.3c-5.2,0-7.9-3.6-7.9-7.8c0-4.1,2.6-8,7.9-8c2,0,4.1,0.8,5.6,2.3l-0.8,0.7c-1.3-1.3-3.1-2-4.8-2c-4.5,0-6.8,3.2-6.8,6.9c0,3.6,2.3,6.7,6.8,6.7c1.7,0,3.5-0.7,4.8-2L153.6,30.1z">
+                        </path>
+                        <path class="st2"
+                            d="M167.9,32.2l-1.7-3.8H157l-1.7,3.8h-1.3l6.9-15.4h1.3l6.9,15.4H167.9z M165.8,27.4l-4.1-9.4l-4.1,9.4H165.8z">
+                        </path>
+                        <path class="st2"
+                            d="M180.9,19.8c-1.1-1.8-2.9-2.1-4.7-2.1c-1.8,0-4.7,0.7-4.7,3.1c0,2,2.1,2.4,4.7,2.9c3,0.6,6.1,1.1,6.1,4.4c0,3.5-3.5,4.3-6.1,4.3c-2.4,0-5.1-1-6.3-3.3l1.1-0.5c0.9,1.9,3.4,2.8,5.3,2.8c1.9,0,4.9-0.5,4.9-3.3c0-2.3-2.5-2.8-5.1-3.3c-2.8-0.6-5.7-1.1-5.7-4c-0.1-3.3,3.3-4.3,5.9-4.3c2.2,0,4.1,0.4,5.6,2.6L180.9,19.8z">
+                        </path>
+                        <path class="st2" d="M189.3,17.9h-5.6v-1.1H196v1.1h-5.6v14.3h-1.2V17.9z"></path>
+                    </svg>
+
+                    <ul>
+                        <li><img class="logospotify"
+                                src="https://www.folhape.com.br/application/themes/folhape.com.br/gfx/logoSpotify.png"
+                                alt="Spotify"></li>
+
+                        <li><img class="deezerlogo"
+                                src="https://www.folhape.com.br/application/themes/folhape.com.br/gfx/logoDeezer.png"
+                                alt="Deezer"></li>
+
+                        <li><img class="soundlogo"
+                                src="https://www.folhape.com.br/application/themes/folhape.com.br/gfx/logoSoundcloud.png"
+                                alt="Soundcloud"></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="clear"></div>
 
 
         <footer style="margin-top: 100px;">
@@ -1852,7 +2408,7 @@
         const numSlidesColumnists = 8;
         var items = document.querySelectorAll('.swiper-slide');
         var stream = document.querySelector('.carrosel');
-        var streamTempory=stream.innerHTML;
+        var streamTempory = stream.innerHTML;
 
         function showSlideColumnists(slideNumber) {
             /*if (slideNumber < 1) {
@@ -1881,15 +2437,13 @@
             //stream.innerHTML= streamTempory + items[0];
             //items = document.querySelectorAll('.swiper-slide');
             showSlideColumnists(currentSlideColumnists + 1);
-
-
         }
-
-
         showSlideColumnists(currentSlideColumnists);
 
 
-
+        function showMenuHamburger() {
+            document.querySelector('.menumobilehamburger').style == 'block' ? document.querySelector('.menumobilehamburger').style = 'none' : document.querySelector('.menumobilehamburger').style = 'block';
+        }
     </script>
 </body>
 
