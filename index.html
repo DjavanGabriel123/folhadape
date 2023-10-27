@@ -20,10 +20,25 @@
 </head>
 
 <body>
+
     <div class="container_16">
-        <div class="grid_8 menumobilehamburger">
+        <div class="menumobilehamburger">
+            <ul>
+                <li>BLOGS</li>
+                <li>ENTRETENIMENTO</li>
+                <li>ESPORTES</li>
+                <li>JR 24H</li>
+                <li>MONITORR7</li>
+                <li>RECORD TV</li>
+                <li>RENDA EXTRA</li>
+                <li>RPET</li>
+                <li>R7 RECEITAS</li>
+                <li>VIRTZ</li>
+                <li>VIVA A VIDA</li>
+            </ul>
         </div>
-        <div class="hamburger" onclick="showMenuHamburger();">☰ <span></span>MENU</div>
+
+        <div class="hamburger">☰ <span></span>MENU</div>
 
         <div class="nav-bar  prefix_2 suffix_2">
             <div class="icontopo">
@@ -139,7 +154,8 @@
                             </button>
 
                             <div class="formbusca">
-                                <button aria-label="botão buscar" class="buscarmascara"></button>
+                                <input id="inputbuscar" class="inputbuscar" type="text" name="Buscar">
+                                <button aria-label="botão buscar" id="btnbuscar" class="buscarmascara"></button>
                                 <span class="material-symbols-outlined">
                                     search
                                 </span>
@@ -2441,9 +2457,32 @@
         showSlideColumnists(currentSlideColumnists);
 
 
-        function showMenuHamburger() {
-            document.querySelector('.menumobilehamburger').style == 'block' ? document.querySelector('.menumobilehamburger').style = 'none' : document.querySelector('.menumobilehamburger').style = 'block';
-        }
+        const Hamburguer = document.querySelector('.hamburger');
+        const menuHamburguer = document.querySelector('.menumobilehamburger');
+        Hamburguer.addEventListener('click', function (e) {
+            e.preventDefault();
+            menuHamburguer.style.display = menuHamburguer.style.display === 'block' ? 'none' : 'block';
+        });
+
+
+
+        const searchButton = document.querySelector('.buscarmascara');
+        const searchInput = document.querySelector('#inputbuscar');
+
+        searchButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            //searchButton.style.display = 'none';
+            alert("oi");
+            //searchInput.style.display = 'block';
+            //searchInput.style.width = '200px'
+            //searchInput.focus();
+        });
+
+        searchInput.addEventListener('blur', function (e) {
+            e.preventDefault();
+            searchButton.style.display = 'inline-block';
+            searchInput.style.display = 'none';
+        });
     </script>
 </body>
 
