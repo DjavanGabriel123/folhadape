@@ -108,6 +108,7 @@ body {
     border: 1px solid #dee0e6;
 
 
+
     @media (max-width: 768px) {
         margin-left: -4px;
         width: 100%;
@@ -2623,14 +2624,132 @@ footer .footer .grid_6.EQM {
 
 .inputbuscar {
     position: absolute;
-    width: 200px;
+    width: 0px;
     height: 35px;
-    padding: 5px 10px;
-    box-shadow: #fae52c;
+    padding: 5px 0px;
     border-radius: 4px;
-    border: solid 1px #dee0e6;
     z-index: 50;
     background-color: white;
-    transition: all .3s ease-in-out;
+    transition: 1s;
+    border: 0;
+    border: 1px solid white;
+}
+
+.formbusca:hover>.inputbuscar {
+    width: 200px;
+    padding: 5px 10px;
+    border: solid 1px #dee0e6;
+    box-shadow: 0 0 5px 2px #fae52c;
+    border: 0;
+}
+
+.inputbuscar:focus {
+    border: solid 1px #dee0e6;
+    outline: none;
+    box-shadow: 0 0 5px 2px #fae52c;
+}
+
+.minilupa {
+    position: absolute;
+    z-index: 50;
+    //background-color: #333333;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    border: 0;
+    transition: 10s;
     display: none;
+}
+
+
+.formbusca:hover>.buscalupa {
+    transform: translateX(150px);
+    z-index: 100;
+}
+
+.buscalupa {
+    transition: 1s;
+    z-index: 100;
+    position: relative;
+}
+
+.formbusca:hover>.minilupa {
+    display: block;
+    left: 170px;
+    width: 50px;
+    height: 45px;
+    border: 0;
+    transition-delay: 5s;
+}
+
+.mainmenu {
+    position: absolute;
+    top: -20px;
+    left: -85px;
+    height: 100%;
+    z-index: 999;
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 20%;
+        height: 100%;
+        background: #FFF;
+        z-index: 999;
+        text-align: left;
+        padding: 30px 40px 54px;
+        overflow-y: auto;
+        transition: 0.3s;
+    }
+}
+
+.menuprincipal {
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        margin: 20px -45px;
+        border-top: solid 1px #dee0e6;
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 16px;
+        width: 290px;
+    }
+
+    .close {
+        border: 0;
+    }
+
+    .dropdown {
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .submenu {
+        padding: 0px;
+
+        ul{
+            border-bottom: 1px solid #dee0e6;
+            padding-bottom: 30px;
+            width: 85%;
+        }
+
+        li {
+            padding: 0px 20px;
+            font-size: 16px;
+            border: none;
+            font-weight: 100;
+        
+        }
+    }
 }

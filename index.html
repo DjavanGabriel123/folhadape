@@ -22,6 +22,115 @@
 <body>
 
     <div class="container_16">
+        <div class="grid_4 mainmenu">
+
+            <nav class="menuprincipal">
+                <ul>
+                    <li class="close">X</li>
+                    <li>A FOLHA DE PERNAMBUCO</li>
+                    <li>EDIÇÃO IMPRESSA</li>
+                    <li>REVISTA</li>
+                    <li>POLÍTICA</li>
+                    
+
+                    <li class="dropdown">
+                        <ul class="submenu">
+                            <li>Blog da Folha</li>
+                            <li>Folha da Poítica</li>
+                            <li>Carlos Britto</li>
+                            <li>Cláudio  Humberto</li>
+                        </ul>
+                    </li>
+
+                    <li>ECONOMIA</li>
+
+                    <li class="dropdown">
+                        <ul class="submenu">
+                            <li>Blog da Folha</li>
+                            <li>Folha da Poítica</li>
+                            <li>Carlos Britto</li>
+                            <li>Cláudio  Humberto</li>
+                        </ul>
+                    </li>
+                    
+                    <li>NOTÍCIAS</li>
+
+                    <li class="dropdown">
+                        <ul class="submenu">
+                            <li>Blog da Folha</li>
+                            <li>Folha da Poítica</li>
+                            <li>Carlos Britto</li>
+                            <li>Cláudio  Humberto</li>
+                        </ul>
+                    </li>
+
+                    <li>CULTURA+</li>
+
+                    <li class="dropdown">
+                        <ul class="submenu">
+                            <li>Blog da Folha</li>
+                            <li>Folha da Poítica</li>
+                            <li>Carlos Britto</li>
+                            <li>Cláudio  Humberto</li>
+                        </ul>
+                    </li>
+
+                    <li>ESPORTES</li>
+
+                    <li class="dropdown">
+                        <ul class="submenu">
+                            <li>Blog da Folha</li>
+                            <li>Folha da Poítica</li>
+                            <li>Carlos Britto</li>
+                            <li>Cláudio  Humberto</li>
+                        </ul>
+                    </li>
+
+                    <li>SABORES</li>
+                    <li>BLOG & COLUNISTAS</li>
+
+                    <li class="dropdown">
+                        <ul class="submenu">
+                            <li>Blog da Folha</li>
+                            <li>Folha da Poítica</li>
+                            <li>Carlos Britto</li>
+                            <li>Cláudio  Humberto</li>
+                        </ul>
+                    </li>
+
+                    <li>ESPECIAIS</li>
+
+                    <li class="dropdown">
+                        <ul class="submenu">
+                            <li>Blog da Folha</li>
+                            <li>Folha da Poítica</li>
+                            <li>Carlos Britto</li>
+                            <li>Cláudio  Humberto</li>
+                        </ul>
+                    </li>
+
+                    <li>RÁDIO FOLHA</li>
+
+                    <li class="dropdown">
+                        <ul class="submenu">
+                            <li>Blog da Folha</li>
+                            <li>Folha da Poítica</li>
+                            <li>Carlos Britto</li>
+                            <li>Cláudio  Humberto</li>
+                        </ul>
+                    </li>
+
+                    <li>FOLHA PLAY</li>
+                    <li>ASSINE A FOLHA</li>
+                    <li>FALE CONOSCO</li>
+                    <li>POLÍTICA E PRIVACIDADE</li>
+                    <li>EXPEDIENTE</li>
+                    <li>IDENTIFIQUE-SE</li>
+
+                </ul>
+            </nav>
+
+        </div>
         <div class="menumobilehamburger">
             <ul>
                 <li>BLOGS</li>
@@ -155,8 +264,16 @@
 
                             <div class="formbusca">
                                 <input id="inputbuscar" class="inputbuscar" type="text" name="Buscar">
+                                <!--<div class="minilupa">
+                                    <button aria-label="botão buscar" id="btnbuscar" class="buscarmascara">
+                                        <span class="material-symbols-outlined">
+                                            search
+                                        </span>
+                                    </button>
+                                </div>-->
+
                                 <button aria-label="botão buscar" id="btnbuscar" class="buscarmascara"></button>
-                                <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined buscalupa">
                                     search
                                 </span>
                             </div>
@@ -2467,23 +2584,24 @@
 
 
 
-        const searchButton = document.querySelector('.buscarmascara');
+        const searchButton = document.querySelector('.formbusca');
         const searchInput = document.querySelector('#inputbuscar');
 
-        searchButton.addEventListener('click', function (e) {
+        /*searchButton.addEventListener('click', function (e) {
             e.preventDefault();
             //searchButton.style.display = 'none';
-            alert("oi");
+            //alert("oi");
             //searchInput.style.display = 'block';
             //searchInput.style.width = '200px'
-            //searchInput.focus();
+            searchInput.style.translateX(200px) scale(1.2);
+            searchInput.focus();
         });
 
         searchInput.addEventListener('blur', function (e) {
             e.preventDefault();
             searchButton.style.display = 'inline-block';
-            searchInput.style.display = 'none';
-        });
+            searchInput.style.width = '0px';
+        });*/
     </script>
 </body>
 
