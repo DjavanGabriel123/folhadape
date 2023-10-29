@@ -2951,7 +2951,7 @@ footer .footer .grid_6.EQM {
 }
 .mainmenu nav {
   position: fixed;
-  top: 0;
+  top: -10px;
   left: 0%;
   width: 20%;
   height: 100%;
@@ -2977,7 +2977,7 @@ footer .footer .grid_6.EQM {
   padding-top: 20px;
   font-weight: bold;
   font-size: 16px;
-  width: 290px;
+  width: 275px;
 }
 .menuprincipal .close {
   border: 0;
@@ -3000,4 +3000,14 @@ footer .footer .grid_6.EQM {
   font-size: 16px;
   border: none;
   font-weight: 100;
+}
+
+.menuIcon {
+  width: 55px;
+  height: 45px;
+  border: 1px solid #dee0e6;
+  margin-left: -45px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

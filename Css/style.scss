@@ -185,6 +185,7 @@ body {
     margin-left: 10px;
     color: black;
     scale: 1.1;
+
 }
 
 header.headersite .topocontent {
@@ -2692,7 +2693,7 @@ footer .footer .grid_6.EQM {
 
     nav {
         position: fixed;
-        top: 0;
+        top: -10px;
         left: 0%;
         width: 20%;
         height: 100%;
@@ -2722,7 +2723,7 @@ footer .footer .grid_6.EQM {
         padding-top: 20px;
         font-weight: bold;
         font-size: 16px;
-        width: 290px;
+        width: 275px;
     }
 
     .close {
@@ -2738,7 +2739,7 @@ footer .footer .grid_6.EQM {
     .submenu {
         padding: 0px;
 
-        ul{
+        ul {
             border-bottom: 1px solid #dee0e6;
             padding-bottom: 30px;
             width: 85%;
@@ -2749,7 +2750,17 @@ footer .footer .grid_6.EQM {
             font-size: 16px;
             border: none;
             font-weight: 100;
-        
+
         }
     }
+}
+
+.menuIcon {
+    width: 55px;
+    height: 45px;
+    border: 1px solid #dee0e6;
+    margin-left: -45px;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
 }
