@@ -1,1 +1,76 @@
-/*# sourceMappingURL=lastnews.css.map */
+.titlepadraols {
+  font-weight: 600;
+  position: relative;
+  color: #231f20;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+  font-size: 30px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-left: 0px;
+}
+
+.listadata {
+  width: 25%;
+  display: grid;
+  margin-left: -40px;
+  margin-top: 40px;
+  height: 10px;
+}
+.listadata svg {
+  width: 22px;
+  height: 22px;
+  fill: #231f20;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.listadata small {
+  margin-bottom: 20px;
+}
+
+.itemlistagem {
+  margin-left: 40px;
+  margin-top: 40px;
+  display: flex;
+}
+.itemlistagem picture {
+  width: 100%;
+}
+.itemlistagem img {
+  width: 80%;
+}
+
+.listultimas {
+  display: flex;
+}
+
+.textlistagem {
+  margin-left: -55px;
+  margin-top: 15px;
+}
+.textlistagem small {
+  color: #d7a110;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 18px;
+}
+.textlistagem h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #231f20;
+  width: 100%;
+}
+.textlistagem h5 {
+  color: #34343e;
+  width: 100%;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+.border {
+  border-top: 1px solid #dee0e6;
+}/*# sourceMappingURL=lastnews.css.map */

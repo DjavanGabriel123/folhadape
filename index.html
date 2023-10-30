@@ -139,7 +139,7 @@
             </nav>
         </div>
 
-        
+
         <div class="menumobilehamburger">
             <ul>
                 <li>BLOGS</li>
@@ -272,7 +272,8 @@
                             </button>
 
                             <div class="formbusca">
-                                <input id="inputbuscar" class="inputbuscar" type="text" name="Buscar">
+                                <input id="inputbuscar" class="inputbuscar" type="text" name="Buscar"
+                                    placeholder="Pesquisar...">
                                 <!--<div class="minilupa">
                                     <button aria-label="botão buscar" id="btnbuscar" class="buscarmascara">
                                         <span class="material-symbols-outlined">
@@ -305,9 +306,11 @@
                         <div class="menubuscaright">
                             <div class="formbuscamobile">
                                 <button aria-label="botão buscar" class="buscarmascara"></button>
-                                <span class="material-symbols-outlined" style="padding-left: 0px;">
+                                <span class="material-symbols-outlined lupamobile" style="padding-left: 0px;">
                                     search
                                 </span>
+                                <input id="inputbuscarmobile" class="inputbuscar" type="text" name="Buscar"
+                                    placeholder="Pesquisar...">
                             </div>
                         </div>
                     </div>
@@ -2596,17 +2599,26 @@
         var menuButton = document.querySelector('#menubutton');
         var buttonX = document.querySelector('#menuX');
         const mainMenu = document.querySelector('.mainmenu');
+        var resScreen;
+
 
 
         const overlayMenu = document.querySelector('.overlaymenu');
         var posmainMenu;
         menuButton.addEventListener('click', function (e) {
             e.preventDefault();
+            resScreen = window.innerWidth
             posmainMenu = mainMenu.getBoundingClientRect();
 
-            //alert(posmainMenu.left);
-            mainMenu.style.left = posmainMenu.left <  -900 ? '-85px' : '-999px';
-            overlayMenu.style.display = overlayMenu.style.display === 'block' ? 'none' : 'block';
+            // alert();
+            if (resScreen > 768) {
+                mainMenu.style.left = posmainMenu.left < -900 ? '-85px' : '-999px';
+                overlayMenu.style.display = overlayMenu.style.display === 'block' ? 'none' : 'block';
+            }
+            if (resScreen < 768) {
+                mainMenu.style.left = posmainMenu.left < -900 ? '0px' : '-999px';
+                overlayMenu.style.display = overlayMenu.style.display === 'block' ? 'none' : 'block';
+            }
         });
 
         buttonX.addEventListener('click', function (e) {
@@ -2614,8 +2626,67 @@
             posmainMenu = mainMenu.getBoundingClientRect();
 
             //alert(posmainMenu.left);
-            mainMenu.style.left = posmainMenu.left >  -80 ? '-999px' : '-85px';
+            mainMenu.style.left = posmainMenu.left > -80 ? '-999px' : '-85px';
             overlayMenu.style.display = overlayMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        overlayMenu.addEventListener('click', function (e) {
+            e.preventDefault();
+            posmainMenu = mainMenu.getBoundingClientRect();
+
+            //alert(posmainMenu.left);
+            mainMenu.style.left = posmainMenu.left > -80 ? '-999px' : '-85px';
+            overlayMenu.style.display = overlayMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        var btnBuscar = document.querySelector('.buscalupa');
+        const inputBuscar = document.getElementById('inputbuscar');
+        btnBuscar.addEventListener('click', function (e) {
+            e.preventDefault();
+            //alert("iae");
+            inputBuscar.style.width = "200px";
+            btnBuscar.style.transform = "translateX(140px)";
+            inputBuscar.style.boxShadow = "0 0 5px 2px #fae52c";
+        });
+
+
+        var btnBuscarMobile = document.querySelector('.menubuscaright');
+        const inputbuscarMobile = document.getElementById('inputbuscarmobile');
+        btnBuscarMobile.addEventListener('click', function (e) {
+            e.preventDefault();
+            //alert("iae");
+            inputbuscarMobile.style.transform = "translateX(-285px)";
+            //btnBuscar.style.transform = "translateX(50px)";
+            inputBuscar.style.boxShadow = "0 0 5px 2px #fae52c";
+        });
+
+        document.body.addEventListener('click', function (e) {
+            var target = e.target;
+
+            resScreen = window.innerWidth
+            posmainMenu = mainMenu.getBoundingClientRect();
+
+            // alert();
+            if (resScreen > 768) {
+                var bloco = document.querySelector('.formbusca');
+                var isInside = bloco === target || bloco.contains(target);
+
+                if (isInside)
+                    return;
+                else
+                    inputbuscar.style.width = "0";
+                btnBuscar.style.transform = "translateX(0px)";
+                inputBuscar.style.boxShadow = "none";
+            }
+            if (resScreen < 768) {
+                var bloco = document.querySelector('.formbuscamobile');
+                var isInside = bloco === target || bloco.contains(target);
+
+                if (isInside)
+                    return;
+                else
+                    inputbuscarMobile.style.transform = "translateX(100px)";
+            }
         });
 
     </script>

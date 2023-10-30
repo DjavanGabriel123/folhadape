@@ -2886,24 +2886,39 @@ footer .footer .grid_6.EQM {
 .inputbuscar {
   position: absolute;
   width: 0px;
-  height: 35px;
+  height: 34px;
   padding: 5px 0px;
   border-radius: 4px;
   z-index: 50;
   background-color: white;
   transition: 1s;
-  border: 0;
   border: 1px solid white;
+  padding-left: 10px;
+}
+@media (max-width: 768px) {
+  .inputbuscar {
+    left: 100px;
+    height: 35px;
+    width: 260px;
+    box-shadow: 0 0 5px 2px #fae52c;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
-.formbusca:hover > .inputbuscar {
-  width: 200px;
-  padding: 5px 10px;
-  border: solid 1px #dee0e6;
-  box-shadow: 0 0 5px 2px #fae52c;
-  border: 0;
+@media (max-width: 768px) {
+  .lupamobile {
+    z-index: 200;
+    position: relative;
+  }
 }
 
+/*.formbusca:hover>.inputbuscar {
+    width: 200px;
+    padding: 5px 10px;
+    border: solid 1px #dee0e6;
+    box-shadow: 0 0 5px 2px #fae52c;
+    border: 0;
+}*/
 .inputbuscar:focus {
   border: solid 1px #dee0e6;
   outline: none;
@@ -2922,26 +2937,24 @@ footer .footer .grid_6.EQM {
   display: none;
 }
 
-.formbusca:hover > .buscalupa {
-  transform: translateX(150px);
-  z-index: 100;
-}
-
+/*.formbusca:hover>.buscalupa {
+    transform: translateX(150px);
+    z-index: 100;
+}*/
 .buscalupa {
   transition: 1s;
   z-index: 100;
   position: relative;
 }
 
-.formbusca:hover > .minilupa {
-  display: block;
-  left: 170px;
-  width: 50px;
-  height: 45px;
-  border: 0;
-  transition-delay: 5s;
-}
-
+/*.formbusca:hover>.minilupa {
+    display: block;
+    left: 170px;
+    width: 50px;
+    height: 45px;
+    border: 0;
+    transition-delay: 5s;
+}*/
 .mainmenu {
   position: absolute;
   top: -20px;
@@ -2968,7 +2981,8 @@ footer .footer .grid_6.EQM {
 .mainmenu nav::-webkit-scrollbar {
   width: 5px;
   height: 8px;
-  background-color: #e9e3e3; /* or add it to the track */
+  background-color: #e9e3e3;
+  /* or add it to the track */
 }
 
 @media (max-width: 768px) {

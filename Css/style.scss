@@ -2626,23 +2626,41 @@ footer .footer .grid_6.EQM {
 .inputbuscar {
     position: absolute;
     width: 0px;
-    height: 35px;
+    height: 34px;
     padding: 5px 0px;
     border-radius: 4px;
     z-index: 50;
     background-color: white;
     transition: 1s;
-    border: 0;
     border: 1px solid white;
+    padding-left: 10px;
+
+    @media (max-width: 768px) {
+        left: 100px;
+        height: 35px;
+        width: 260px;
+        box-shadow: 0 0 5px 2px #fae52c;
+        transition: all .3s ease-in-out;
+    }
+
 }
 
-.formbusca:hover>.inputbuscar {
+.lupamobile{
+
+
+    @media (max-width: 768px) {
+        z-index: 200;
+        position: relative;
+    }
+}
+
+/*.formbusca:hover>.inputbuscar {
     width: 200px;
     padding: 5px 10px;
     border: solid 1px #dee0e6;
     box-shadow: 0 0 5px 2px #fae52c;
     border: 0;
-}
+}*/
 
 .inputbuscar:focus {
     border: solid 1px #dee0e6;
@@ -2664,10 +2682,10 @@ footer .footer .grid_6.EQM {
 }
 
 
-.formbusca:hover>.buscalupa {
+/*.formbusca:hover>.buscalupa {
     transform: translateX(150px);
     z-index: 100;
-}
+}*/
 
 .buscalupa {
     transition: 1s;
@@ -2675,14 +2693,14 @@ footer .footer .grid_6.EQM {
     position: relative;
 }
 
-.formbusca:hover>.minilupa {
+/*.formbusca:hover>.minilupa {
     display: block;
     left: 170px;
     width: 50px;
     height: 45px;
     border: 0;
     transition-delay: 5s;
-}
+}*/
 
 .mainmenu {
     position: absolute;
@@ -2692,9 +2710,7 @@ footer .footer .grid_6.EQM {
     z-index: 999;
     transition: 1s;
 
-    @media (max-width: 768px) {
-      
-    }
+    @media (max-width: 768px) {}
 
     nav {
         position: fixed;
@@ -2711,10 +2727,11 @@ footer .footer .grid_6.EQM {
         }
     }
 
-    nav::-webkit-scrollbar{
+    nav::-webkit-scrollbar {
         width: 5px;
         height: 8px;
-        background-color: #e9e3e3; /* or add it to the track */
+        background-color: #e9e3e3;
+        /* or add it to the track */
     }
 
 }
@@ -2779,7 +2796,7 @@ footer .footer .grid_6.EQM {
     cursor: pointer;
 }
 
-.overlaymenu{
+.overlaymenu {
     display: none;
     width: 100%;
     position: absolute;
