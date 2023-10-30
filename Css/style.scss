@@ -2687,29 +2687,43 @@ footer .footer .grid_6.EQM {
 .mainmenu {
     position: absolute;
     top: -20px;
-    left: -85px;
+    left: -999px;
     height: 100%;
     z-index: 999;
+    transition: 1s;
+
+    @media (max-width: 768px) {
+      
+    }
 
     nav {
         position: fixed;
-        top: -10px;
-        left: 0%;
-        width: 20%;
-        height: 100%;
+        width: 300px;
+        height: 95%;
         background: #FFF;
         z-index: 999;
         text-align: left;
         padding: 30px 40px 54px;
-        overflow-y: auto;
-        transition: 0.3s;
+        overflow-y: scroll;
+
+        @media (max-width: 768px) {
+            width: 280px;
+        }
     }
+
+    nav::-webkit-scrollbar{
+        width: 5px;
+        height: 8px;
+        background-color: #e9e3e3; /* or add it to the track */
+    }
+
 }
 
 .menuprincipal {
 
+
     @media (max-width: 768px) {
-        display: none;
+        margin-left: -20px;
     }
 
 
@@ -2763,4 +2777,15 @@ footer .footer .grid_6.EQM {
     background-color: #fff;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.overlaymenu{
+    display: none;
+    width: 100%;
+    position: absolute;
+    height: 10000px;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(29, 28, 28, 0.521), rgb(0, 0, 0));
 }

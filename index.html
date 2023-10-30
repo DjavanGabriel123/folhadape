@@ -21,12 +21,14 @@
 
 <body>
 
+    <div class="overlaymenu"></div>
+
     <div class="container_16">
-        <div class="grid_4 mainmenu">
+        <div class="grid_5 mainmenu">
 
             <nav class="menuprincipal">
                 <ul>
-                    <button class="menuIcon">
+                    <button class="menuIcon" id="menuX">
                         <span class="material-symbols-outlined" style="font-size: 32px;
                         height: 155px;
                         margin-left: 3px;">
@@ -135,8 +137,9 @@
 
                 </ul>
             </nav>
-
         </div>
+
+        
         <div class="menumobilehamburger">
             <ul>
                 <li>BLOGS</li>
@@ -262,7 +265,7 @@
                 <div class="topocontent">
                     <div class="grid_4">
                         <div class="menubusca">
-                            <button aria-label="botão menu">
+                            <button aria-label="botão menu" id="menubutton">
                                 <div clas="botaomobile"><span><span class="material-symbols-outlined">
                                             menu
                                         </span></span></div>
@@ -2590,24 +2593,31 @@
 
 
 
-        const searchButton = document.querySelector('.formbusca');
-        const searchInput = document.querySelector('#inputbuscar');
+        var menuButton = document.querySelector('#menubutton');
+        var buttonX = document.querySelector('#menuX');
+        const mainMenu = document.querySelector('.mainmenu');
 
-        /*searchButton.addEventListener('click', function (e) {
+
+        const overlayMenu = document.querySelector('.overlaymenu');
+        var posmainMenu;
+        menuButton.addEventListener('click', function (e) {
             e.preventDefault();
-            //searchButton.style.display = 'none';
-            //alert("oi");
-            //searchInput.style.display = 'block';
-            //searchInput.style.width = '200px'
-            searchInput.style.translateX(200px) scale(1.2);
-            searchInput.focus();
+            posmainMenu = mainMenu.getBoundingClientRect();
+
+            //alert(posmainMenu.left);
+            mainMenu.style.left = posmainMenu.left <  -900 ? '-85px' : '-999px';
+            overlayMenu.style.display = overlayMenu.style.display === 'block' ? 'none' : 'block';
         });
 
-        searchInput.addEventListener('blur', function (e) {
+        buttonX.addEventListener('click', function (e) {
             e.preventDefault();
-            searchButton.style.display = 'inline-block';
-            searchInput.style.width = '0px';
-        });*/
+            posmainMenu = mainMenu.getBoundingClientRect();
+
+            //alert(posmainMenu.left);
+            mainMenu.style.left = posmainMenu.left >  -80 ? '-999px' : '-85px';
+            overlayMenu.style.display = overlayMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
     </script>
 </body>
 
