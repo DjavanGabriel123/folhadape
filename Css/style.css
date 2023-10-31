@@ -851,7 +851,7 @@ header.headerSite .head .grid_6 .loginArea .entrar {
 }
 @media (max-width: 768px) {
   .menutopo .scrollmenu li {
-    padding: 31px;
+    padding: 33px;
     font-size: 14px;
   }
 }
@@ -869,7 +869,7 @@ header.headerSite .head .grid_6 .loginArea .entrar {
   .menutopo .scrollmenu ul {
     width: -moz-max-content;
     width: max-content;
-    padding: 0 10px;
+    padding: 0 5px;
     transition: transform 0.5s ease-in-out;
   }
 }
@@ -1929,7 +1929,7 @@ footer .footer .grid_6.EQM {
 @media (max-width: 768px) {
   .proximaflexa {
     display: none;
-    right: -4px;
+    right: -3px;
     display: flex;
     position: absolute;
     top: 7px;

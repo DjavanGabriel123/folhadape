@@ -10,6 +10,7 @@
   margin-bottom: 20px;
   margin-top: 60px;
   margin-left: 0px;
+  margin-bottom: 30px;
 }
 
 .listadata {
@@ -32,7 +33,7 @@
 
 .itemlistagem {
   margin-left: 40px;
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
 }
 .itemlistagem picture {
@@ -44,11 +45,18 @@
 
 .listultimas {
   display: flex;
+  margin-bottom: 0px;
 }
 
 .textlistagem {
   margin-left: -55px;
   margin-top: 15px;
+}
+.textlistagem span {
+  color: #d7a110;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 18px;
 }
 .textlistagem small {
   color: #d7a110;
@@ -73,4 +81,46 @@
 
 .border {
   border-top: 1px solid #dee0e6;
+}
+
+.border2 {
+  border-bottom: 1px solid #dee0e6;
+  margin-top: 150px;
+}
+
+.paginacao {
+  display: flex;
+  margin-left: 335px;
+  margin-top: 25px;
+}
+.paginacao img {
+  width: 33px;
+  height: 38px;
+}
+.paginacao .gray-paginacao {
+  border: 1px solid #dee0e6;
+  height: 28px;
+  background: #fff;
+  text-align: center;
+  width: 40px;
+  font-weight: bold;
+  color: #231f20;
+  margin: 0 10px 0 15px;
+  border-radius: 6px;
+  padding-top: 10px;
+}
+.paginacao .item-paginacao {
+  margin-right: 5px;
+}
+.paginacao .item-paginacaoesquerda {
+  margin-right: 5px;
+  opacity: 0.5;
+}
+.paginacao .item-paginacao-total {
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+.lastnews {
+  margin-top: 340px;
 }/*# sourceMappingURL=lastnews.css.map */

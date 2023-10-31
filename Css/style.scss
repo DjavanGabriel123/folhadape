@@ -506,7 +506,7 @@ header.headerSite .head .grid_6 .loginArea .entrar {
             padding: 0px 30px;
 
             @media (max-width: 768px) {
-                padding: 31px;
+                padding: 33px;
                 font-size: 14px;
             }
         }
@@ -523,7 +523,7 @@ header.headerSite .head .grid_6 .loginArea .entrar {
 
             @media (max-width: 768px) {
                 width: max-content;
-                padding: 0 10px;
+                padding: 0 5px;
                 transition: transform 0.5s ease-in-out;
 
 
@@ -1633,7 +1633,7 @@ footer .footer .grid_6.EQM {
 
     @media (max-width: 768px) {
         display: none;
-        right: -4px;
+        right: -3px;
         display: flex;
         position: absolute;
         top: 7px;
