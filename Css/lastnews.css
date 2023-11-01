@@ -20,6 +20,13 @@
   margin-top: 40px;
   height: 10px;
 }
+@media (max-width: 768px) {
+  .listadata {
+    display: block;
+    margin-left: -35px;
+    width: 100%;
+  }
+}
 .listadata svg {
   width: 22px;
   height: 22px;
@@ -30,33 +37,71 @@
 .listadata small {
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .listadata small {
+    margin-right: 20px;
+  }
+}
 
 .itemlistagem {
   margin-left: 40px;
   margin-top: 20px;
   display: flex;
 }
+@media (max-width: 768px) {
+  .itemlistagem {
+    display: block;
+    margin-left: 38px;
+  }
+}
 .itemlistagem picture {
   width: 100%;
 }
+@media (max-width: 768px) {
+  .itemlistagem picture {
+    margin-left: -77px;
+  }
+}
 .itemlistagem img {
   width: 80%;
+}
+@media (max-width: 768px) {
+  .itemlistagem img {
+    width: 372px;
+  }
 }
 
 .listultimas {
   display: flex;
   margin-bottom: 0px;
 }
+@media (max-width: 768px) {
+  .listultimas {
+    display: block;
+  }
+}
 
 .textlistagem {
   margin-left: -55px;
   margin-top: 15px;
+}
+@media (max-width: 768px) {
+  .textlistagem {
+    margin-top: 0px;
+    margin-left: -75px;
+    width: 40%;
+  }
 }
 .textlistagem span {
   color: #d7a110;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 18px;
+}
+@media (max-width: 768px) {
+  .textlistagem span {
+    font-size: 14px;
+  }
 }
 .textlistagem small {
   color: #d7a110;
@@ -65,33 +110,69 @@
   font-weight: normal;
   font-size: 18px;
 }
+@media (max-width: 768px) {
+  .textlistagem small {
+    font-size: 14px;
+  }
+}
 .textlistagem h3 {
   font-size: 30px;
   font-weight: 600;
   color: #231f20;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .textlistagem h3 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+}
 .textlistagem h5 {
   color: #34343e;
   width: 100%;
   font-weight: normal;
   font-size: 18px;
-  margin-top: -20px;
+  margin-top: -25px;
+}
+@media (max-width: 768px) {
+  .textlistagem h5 {
+    font-size: 16px;
+  }
+}
+
+.textlistagem h3:hover {
+  color: #d7a110;
 }
 
 .border {
   border-top: 1px solid #dee0e6;
+}
+@media (max-width: 768px) {
+  .border {
+    width: 40%;
+  }
 }
 
 .border2 {
   border-bottom: 1px solid #dee0e6;
   margin-top: 150px;
 }
+@media (max-width: 768px) {
+  .border2 {
+    width: 40%;
+  }
+}
 
 .paginacao {
   display: flex;
   margin-left: 335px;
   margin-top: 25px;
+}
+@media (max-width: 768px) {
+  .paginacao {
+    margin-left: 50px;
+  }
 }
 .paginacao img {
   width: 33px;
@@ -123,4 +204,9 @@
 
 .lastnews {
   margin-top: 340px;
+}
+@media (max-width: 768px) {
+  .lastnews {
+    margin-top: 100px;
+  }
 }/*# sourceMappingURL=lastnews.css.map */

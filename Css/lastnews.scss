@@ -20,6 +20,12 @@
     margin-top: 40px;
     height: 10px;
 
+    @media (max-width: 768px) {
+        display: block;
+        margin-left: -35px;
+        width: 100%;
+    }
+
     svg {
         width: 22px;
         height: 22px;
@@ -30,6 +36,10 @@
 
     small {
         margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            margin-right: 20px;
+        }
     }
 }
 
@@ -39,30 +49,59 @@
     margin-top: 20px;
     display: flex;
 
+    @media (max-width: 768px) {
+        display: block;
+        margin-left: 38px
+    }
+
     picture {
         width: 100%;
+
+        @media (max-width: 768px) {
+            margin-left: -77px;
+        }
     }
 
 
     img {
         width: 80%;
+
+        @media (max-width: 768px) {
+            width: 372px;
+        }
+
     }
 }
 
 .listultimas {
     display: flex;
     margin-bottom: 0px;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
 }
 
 .textlistagem {
     margin-left: -55px;
     margin-top: 15px;
 
+    @media (max-width: 768px) {
+        margin-top: 0px;
+        margin-left: -75px;
+        width: 40%;
+    }
+
     span {
         color: #d7a110;
         text-transform: uppercase;
         font-weight: normal;
         font-size: 18px;
+
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
 
@@ -72,6 +111,10 @@
         text-transform: uppercase;
         font-weight: normal;
         font-size: 18px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
     h3 {
@@ -79,6 +122,13 @@
         font-weight: 600;
         color: #231f20;
         width: 100%;
+
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
     }
 
     h5 {
@@ -86,23 +136,44 @@
         width: 100%;
         font-weight: normal;
         font-size: 18px;
-        margin-top: -20px;
+        margin-top: -25px;
+
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
     }
+}
+
+.textlistagem h3:hover {
+    color: #d7a110;
 }
 
 .border {
     border-top: 1px solid #dee0e6;
+
+    @media (max-width: 768px) {
+        width: 40%;
+    }
 }
 
 .border2 {
     border-bottom: 1px solid #dee0e6;
     margin-top: 150px;
+
+    @media (max-width: 768px) {
+        width: 40%;
+    }
 }
 
 .paginacao {
     display: flex;
     margin-left: 335px;
     margin-top: 25px;
+
+    @media (max-width: 768px) {
+        margin-left: 50px;
+    }
 
     img {
         width: 33px;
@@ -141,4 +212,8 @@
 
 .lastnews {
     margin-top: 340px;
+
+    @media (max-width: 768px) {
+        margin-top: 100px;
+    }
 }
