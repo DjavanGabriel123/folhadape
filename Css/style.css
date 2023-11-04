@@ -1838,6 +1838,8 @@ footer .footer .grid_6.EQM {
   display: block;
   border-radius: 6px;
   margin-bottom: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 768px) {
   .lazy {
