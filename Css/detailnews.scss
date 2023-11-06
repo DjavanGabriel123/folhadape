@@ -1,5 +1,18 @@
 .bannerrogerio {
     margin-top: 30px;
+
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.container_16 .prefix_2 {
+
+    @media (max-width: 768px) {
+        padding-left: 0px;
+    }
+
 }
 
 .titulonoticia {
@@ -12,12 +25,22 @@
         margin-top: 5px;
         margin-bottom: 0px;
         margin-left: 0px;
+
+        @media (max-width: 768px) {
+            font-size: 28px;
+            line-height: 28px;
+            width: 40%;
+        }
     }
 
     h2 {
         font-weight: normal;
         margin-top: 15px;
         font-size: 24px;
+
+        @media (max-width: 768px) {
+            width: 40%;
+        }
     }
 }
 
@@ -29,20 +52,36 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 768px) {
+        padding: 15px 0;
+    }
+
     strong {
         color: #231f20;
         font-size: 13px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
     span {
         color: #231f20;
         text-transform: none;
         font-size: 13px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
     small {
         display: block;
         font-size: 12px;
+
+        @media (max-width: 768px) {
+            font-size: 11px;
+        }
     }
 }
 
@@ -85,6 +124,11 @@
     width: 100%;
     display: inline-block;
     text-align: center;
+
+    @media (max-width: 768px) {
+        width: 40%;
+        margin-top: 0px;
+    }
 }
 
 #audiotext {
@@ -177,6 +221,10 @@
 .border {
     border-top: 1px solid #dee0e6;
     margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .imgpadrao {
@@ -188,6 +236,12 @@
     height: 650px;
     margin-top: -135px;
     object-fit: cover;
+
+    @media (max-width: 768px) {
+        width: 372px;
+        height: 279px;
+        margin-left: -80px;
+    }
 }
 
 .legendaFoto {
@@ -303,6 +357,7 @@
 .listagemcoluistas {
     list-style: none;
     margin-top: 45px;
+    margin-left: -35px;
 
     img {
         width: 69px;
@@ -313,6 +368,7 @@
     li {
         display: flex;
         width: 100%;
+        height: 90px;
         border: 1px solid #dee0e6;
         border-radius: 6px;
         padding-top: 20px;
@@ -330,6 +386,7 @@
 
     h3 {
         font-size: 24px;
+        width: 90%;
     }
 
     .colunsitacanto {
@@ -350,8 +407,9 @@
     line-height: 32px;
     padding-left: 60px;
     margin-bottom: 20px;
+    margin-top: 0px;
 
-    strong{
+    strong {
         color: #d7a110;
         font-weight: 600;
     }
@@ -420,5 +478,71 @@
         font-weight: 600;
         line-height: 18px;
         width: 80%;
+    }
+}
+
+.mobile {
+    display: none;
+
+
+    @media (max-width: 768px) {
+        display: block;
+        margin-left: -80px;
+        width: 40%;
+    }
+
+    .mobiletext{
+
+
+        @media (max-width: 768px) {
+            margin-left: 10px;
+            width: 100%;
+            align-self: center;
+        }
+    }
+
+    img {
+        width: 69px;
+        border-radius: 100%;
+
+        @media (max-width: 768px) {
+            width: 94px;
+            height: 94px;
+            object-fit: cover;
+        }
+
+    }
+
+
+    li {
+        display: flex;
+        width: 100%;
+        height: 90px;
+        border: 1px solid #dee0e6;
+        border-radius: 6px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media (max-width: 768px) {
+            height: 110px;
+        }
+    }
+
+    small {
+        color: #d7a110;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .colunsitacanto {
+        margin-left: 20px;
     }
 }
