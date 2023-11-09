@@ -1133,11 +1133,13 @@ h3 {
 footer .footer .grid_4.folhape {
     border-right: 1px solid #dee0e6;
     box-sizing: border-box;
+    margin-bottom: 100px;
 
 
     @media (max-width: 768px) {
         border-right: unset;
         display: block;
+        margin-bottom: 0px;
     }
 }
 
