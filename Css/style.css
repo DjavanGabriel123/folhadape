@@ -402,7 +402,7 @@ body {
     padding: 0 10px;
     box-sizing: border-box;
     margin-top: 10px;
-    overflow-x: hidden;
+    overflow-x: unset;
   }
 }
 
@@ -1347,6 +1347,7 @@ h3 {
     display: block;
     margin-left: -20px;
     width: 50%;
+    overflow-x: hidden;
   }
 }
 .lista .titlePadrao {
@@ -1470,6 +1471,7 @@ footer .footer .grid_6.EQM {
   .grid_6 .midiasrodape {
     margin: 30px 165px 14px 0;
     height: 180px;
+    margin-bottom: -130px;
   }
 }
 .grid_6 #telegram {
@@ -2963,7 +2965,7 @@ footer .footer .grid_6.EQM {
   left: -999px;
   height: 100%;
   z-index: 999;
-  transition: 1s;
+  transition: 0.5s;
 }
 .mainmenu nav {
   position: fixed;

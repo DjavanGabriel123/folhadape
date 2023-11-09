@@ -21,7 +21,7 @@ body {
         padding: 0 10px;
         box-sizing: border-box;
         margin-top: 10px;
-        overflow-x: hidden
+        overflow-x: unset;
     }
 }
 
@@ -1036,6 +1036,7 @@ h3 {
         display: block;
         margin-left: -20px;
         width: 50%;
+        overflow-x: hidden
     }
 
     .titlePadrao {
@@ -1133,6 +1134,7 @@ footer .footer .grid_4.folhape {
     border-right: 1px solid #dee0e6;
     box-sizing: border-box;
 
+
     @media (max-width: 768px) {
         border-right: unset;
         display: block;
@@ -1164,6 +1166,7 @@ footer .footer .grid_6.EQM {
         @media (max-width: 768px) {
             margin: 30px 165px 14px 0;
             height: 180px;
+            margin-bottom: -130px;
         }
     }
 
@@ -2709,7 +2712,7 @@ footer .footer .grid_6.EQM {
     left: -999px;
     height: 100%;
     z-index: 999;
-    transition: 1s;
+    transition: 0.5s;
 
     @media (max-width: 768px) {}
 
